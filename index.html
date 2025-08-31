@@ -13,236 +13,224 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <div class="header-main">
-          <div class="nav-container">
-            <div class="logo">
-              <a href="index.html">
-                <img
-                  src="https://images.unsplash.com/photo-1498837167922-ddd27525d352"
-                  alt="Esther Allier Hypnose"
-                  style="max-height: 100px"
-                />
-              </a>
-            </div>
-
-            <div class="nav-main">
-              <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <nav class="nav-links" id="nav-links">
-                <a href="index.html">ACCUEIL</a>
-                <div class="dropdown">
-                  <a href="#" class="dropbtn">HYPNOSE</a>
-                  <div class="dropdown-content">
-                    <a href="traumatisme.html">Traumatisme</a>
-                    <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
-                    <a href="tabac.html">Arrêt du tabac</a>
-                    <a href="troubleDuSommeil.html">Trouble du sommeil</a>
-                    <a href="stressAnxiete.html">Stress et Anxiété</a>
-                  </div>
-                </div>
-                <a href="Psychogenealogie.html">PSYCHOGÉNÉALOGIE</a>
-                <a href="contact.html">CONTACT</a>
-                <a href="aProposDeMoi.html">A PROPOS DE MOI</a>
-              </nav>
+    <header class="main-header">
+      <div class="container header-flex">
+        <a
+          href="index.html"
+          class="logo"
+          style="
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #203066;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <span
+            style="
+              display: inline-block;
+              background: linear-gradient(90deg, #203066 60%, #ec008c 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+            "
+            >Esther Allier</span
+          >
+          <span
+            style="
+              font-size: 1.1rem;
+              font-weight: 400;
+              color: #ec008c;
+              margin-left: 2px;
+            "
+            >Hypnose</span
+          >
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html">Accueil</a>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Hypnose</a>
+            <div class="dropdown-content">
+              <a href="traumatisme.html">Traumatisme</a>
+              <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
+              <a href="tabac.html">Arrêt du tabac</a>
+              <a href="troubleDuSommeil.html">Trouble du sommeil</a>
+              <a href="stressAnxiete.html">Stress et Anxiété</a>
             </div>
           </div>
+          <a href="Psychogenealogie.html">Psychogénéalogie</a>
+          <a href="contact.html">Contact</a>
+          <a href="aProposDeMoi.html">À propos</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
         </div>
       </div>
     </header>
 
     <main>
-      <div
-        class="banner"
-        style="
-          background-image: url('https://images.pexels.com/photos/3760323/pexels-photo-3760323.jpeg');
-        "
-      >
-        <div class="banner-overlay"></div>
-        <div class="container">
-          <div class="banner-content">
-            <h2 class="uppercase"><strong>HYPNOTHÉRAPEUTE</strong></h2>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <h1>Esther Allier</h1>
+            <h2>Hypnothérapeute à Strasbourg Eurométropole</h2>
             <p>
-              <span style="font-size: 140%"
-                >L'hypnose, en tant que thérapie brève, permet de résoudre vos
-                problèmes tout en développant vos capacités à gérer vos émotions
-                au quotidien.</span
-              >
+              Libérez votre potentiel, atteignez vos objectifs : arrêt du tabac,
+              gestion du stress, troubles alimentaires, sommeil, confiance en
+              soi, traumatismes…
             </p>
-            <a href="tel:0782835451" class="button">APPELEZ AUJOURD'HUI</a>
+            <a href="contact.html" class="cta-btn">Prendre rendez-vous</a>
+          </div>
+          <div class="hero-img">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+              alt="Cabinet hypnose Strasbourg"
+            />
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="container">
-        <div class="services-grid">
-          <a class="service-box" href="troublesAlimentaire.html">
-            <img
-              src="https://images.unsplash.com/photo-1498837167922-ddd27525d352"
-              alt="Troubles Alimentaires"
-            />
-            <div class="service-text">
-              <p>Troubles Alimentaires</p>
-            </div>
-          </a>
-
-          <a class="service-box" href="traumatisme.html">
-            <img
-              src="https://images.pexels.com/photos/568027/pexels-photo-568027.jpeg"
-              alt="Traumatisme"
-            />
-            <div class="service-text">
-              <p>Traumatisme</p>
-            </div>
-          </a>
-
-          <a class="service-box" href="tabac.html">
-            <img
-              src="https://images.pexels.com/photos/247040/pexels-photo-247040.jpeg"
-              alt="Arrêt du tabac"
-            />
-            <div class="service-text">
-              <p>Arrêt du tabac</p>
-            </div>
-          </a>
-
-          <a class="service-box" href="troubleDuSommeil.html">
-            <img
-              src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55"
-              alt="Trouble du sommeil"
-            />
-            <div class="service-text">
-              <p>Trouble du sommeil</p>
-            </div>
-          </a>
-
-          <a class="service-box" href="#">
-            <img
-              src="https://images.pexels.com/photos/1246961/pexels-photo-1246961.jpeg"
-              alt="Sexualité"
-            />
-            <div class="service-text">
-              <p>Sexualité</p>
-            </div>
-          </a>
-
-          <a class="service-box" href="stressAnxiete.html">
-            <img
-              src="https://images.pexels.com/photos/897817/pexels-photo-897817.jpeg"
-              alt="Stress - Anxiété"
-            />
-            <div class="service-text">
-              <p>Stress - Anxiété</p>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <section class="section section-gray">
+      <section class="services">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 style="text-align: center">L'hypnose pour vous aider</h2>
-              <p style="text-align: justify">
-                L'hypnose n'a pas besoin d'une présentation longue ni d'une
-                publicité, c'est simplement un état modifié de notre conscience,
-                appelé transe. Nous entrons quotidiennement en transe, lors d'un
-                trajet en voiture, en regardant la télévision, en
-                cuisinant…c'est lorsque que notre esprit est ailleurs, ou « dans
-                la lune ».<br />
-                Lors d'une séance, le praticien vous guidera pour entrer dans
-                cet état naturel permettant d'augmenter votre « lâché prise » et
-                ainsi accomplir les changements nécessaires pour la réalisation
-                de votre désir et de votre objectif.
-              </p>
+          <h2>Accompagnements proposés</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <h3>Arrêt du tabac</h3>
+              <p>Libérez-vous de la dépendance et retrouvez votre liberté.</p>
+              <a href="tabac.html">En savoir plus</a>
+            </div>
+            <div class="service-card">
+              <h3>Gestion du stress & anxiété</h3>
+              <p>Retrouvez calme et sérénité au quotidien.</p>
+              <a href="stressAnxiete.html">En savoir plus</a>
+            </div>
+            <div class="service-card">
+              <h3>Troubles alimentaires</h3>
+              <p>Reprenez le contrôle de votre relation à l’alimentation.</p>
+              <a href="troublesAlimentaire.html">En savoir plus</a>
+            </div>
+            <div class="service-card">
+              <h3>Trouble du sommeil</h3>
+              <p>Retrouvez un sommeil réparateur naturellement.</p>
+              <a href="troubleDuSommeil.html">En savoir plus</a>
+            </div>
+            <div class="service-card">
+              <h3>Traumatismes</h3>
+              <p>Avancez sereinement après un événement difficile.</p>
+              <a href="traumatisme.html">En savoir plus</a>
+            </div>
+            <div class="service-card">
+              <h3>Psychogénéalogie</h3>
+              <p>Comprenez et libérez les héritages familiaux inconscients.</p>
+              <a href="Psychogenealogie.html">En savoir plus</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>F.A.Q sur l'hypnose Ericksonienne</h2>
-              <p>
-                L'hypnose ericksonienne est une forme très spécifique d'hypnose
-                qui se caractérise par l'utilisation de suggestion indirecte, de
-                métaphore et de narration, par opposition à la suggestion
-                directe utilisé en hypnose classique.
-              </p>
-              <p>
-                Ses découvertes ont influencé un large spectre de thérapie
-                allant de la thérapie familiale à la programmation
-                neuro-linguistique.
-              </p>
-            </div>
+      <section class="about-short">
+        <div class="container about-flex">
+          <div class="about-img">
+            <img
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9"
+              alt="Esther Allier portrait"
+            />
           </div>
+          <div class="about-text">
+            <h2>À propos de moi</h2>
+            <p>
+              Je vous accompagne avec bienveillance et professionnalisme pour
+              vous aider à dépasser vos blocages et à retrouver votre équilibre.
+              Découvrez mon parcours et ma vision de l’accompagnement.
+            </p>
+            <a href="aProposDeMoi.html" class="cta-link">En savoir plus</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <div class="container">
+          <h2>L'hypnose pour vous aider</h2>
+          <p>
+            L'hypnose est un état naturel de conscience modifiée, que nous
+            expérimentons tous au quotidien. En séance, je vous guide pour
+            accéder à cet état et ainsi faciliter les changements nécessaires à
+            votre bien-être et à l’atteinte de vos objectifs.
+          </p>
+        </div>
+      </section>
+      <section class="faq-section">
+        <div class="container">
+          <h2>F.A.Q sur l'hypnose Ericksonienne</h2>
+          <p>
+            L'hypnose ericksonienne utilise la suggestion indirecte, la
+            métaphore et la narration pour accompagner le changement,
+            contrairement à l’hypnose classique plus directive. Cette approche a
+            influencé de nombreuses formes de thérapie moderne.
+          </p>
         </div>
       </section>
     </main>
-
-    <footer>
-      <div class="container">
-        <div class="footer-widgets">
-          <div class="widget">
-            <span class="widget-title">QUI SUIS-JE ?</span>
-            <p>
-              Hypnothérapeute, je pratique l'hypnose ericksonienne à Strasbourg
-              et en ligne. Créatrice d'audio d'auto-hypnose accessibles à tous,
-              favorisant ainsi l'épanouissement et développement personnel.
-            </p>
-          </div>
-
-          <div class="widget">
-            <span class="widget-title">À propos</span>
-            <ul>
-              <li><a href="#">Mentions légales</a></li>
-              <li><a href="#">Conditions générales de vente</a></li>
-              <li><a href="#">Confidentialité et Cookies</a></li>
-            </ul>
-          </div>
-
-          <div class="widget">
-            <span class="widget-title">Adresse</span>
-            <p>
-              Esther Allier – Hypnothérapeute<br />
-              10 Rue du Général de Castelnau<br />
-              Espace Castelnau<br />
-              67000 STRASBOURG
-            </p>
+    <footer class="main-footer">
+      <div class="container footer-flex">
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p>
+            Esther Allier<br />Cabinet d’hypnose à Strasbourg<br />Email :
+            <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a
+            ><br />Tél : <a href="tel:+33612345678">06 12 34 56 78</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="aProposDeMoi.html">À propos</a></li>
+            <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Adresse</h3>
+          <p>
+            Esther Allier – Hypnothérapeute<br />
+            10 Rue du Général de Castelnau<br />
+            Espace Castelnau<br />
+            67000 STRASBOURG
+          </p>
+          <h3>Suivez-moi</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                alt="Instagram"
+            /></a>
+            <a href="#" aria-label="Facebook"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                alt="Facebook"
+            /></a>
           </div>
         </div>
       </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Esther Allier. Tous droits réservés. |
+          <a href="#">Mentions légales</a>
+        </p>
+      </div>
     </footer>
-
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const hamburger = document.getElementById("hamburger");
-        const navLinks = document.getElementById("nav-links");
-        const dropdowns = document.querySelectorAll(".dropdown");
-
-        // Toggle mobile menu
-        hamburger.addEventListener("click", function () {
-          hamburger.classList.toggle("active");
-          navLinks.classList.toggle("active");
-        });
-
-        // Handle dropdowns on mobile
-        if (window.innerWidth <= 768) {
-          dropdowns.forEach((dropdown) => {
-            const dropdownBtn = dropdown.querySelector(".dropbtn");
-            dropdownBtn.addEventListener("click", function (e) {
-              e.preventDefault();
-              dropdown.classList.toggle("active");
-            });
-          });
-        }
+      // Menu burger responsive
+      const hamburger = document.getElementById("hamburger");
+      const nav = document.getElementById("main-nav");
+      hamburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        hamburger.classList.toggle("open");
       });
     </script>
   </body>

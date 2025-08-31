@@ -8,86 +8,100 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <div class="header-main">
-          <div class="nav-container">
-            <div class="logo">
-              <a href="index.html">
-                <img
-                  src="https://images.pexels.com/photos/6787202/pexels-photo-6787202.jpeg"
-                  alt="Esther Allier Hypnose"
-                  style="max-height: 100px"
-                />
-              </a>
-            </div>
-
-            <div class="nav-main">
-              <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <nav class="nav-links" id="nav-links">
-                <a href="index.html">ACCUEIL</a>
-                <div class="dropdown">
-                  <a href="#" class="dropbtn">HYPNOSE</a>
-                  <div class="dropdown-content">
-                    <a href="traumatisme.html">Traumatisme</a>
-                    <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
-                    <a href="tabac.html">Arrêt du tabac</a>
-                    <a href="troubleDuSommeil.html">Trouble du sommeil</a>
-                    <a href="stressAnxiete.html">Stress et Anxiété</a>
-                  </div>
-                </div>
-                <a href="Psychogenealogie.html">PSYCHOGÉNÉALOGIE</a>
-                <a href="contact.html">CONTACT</a>
-                <a href="aProposDeMoi.html">A PROPOS DE MOI</a>
-              </nav>
+    <header class="main-header">
+      <div class="container header-flex">
+        <a href="index.html" class="logo" style="font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; font-size: 2rem; color: #203066; letter-spacing: 1px; text-decoration: none; display: flex; align-items: center; gap: 8px;">
+          <span style="display: inline-block; background: linear-gradient(90deg, #203066 60%, #ec008c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Esther Allier</span>
+          <span style="font-size: 1.1rem; font-weight: 400; color: #ec008c; margin-left: 2px;">Hypnose</span>
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html">Accueil</a>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Hypnose</a>
+            <div class="dropdown-content">
+              <a href="traumatisme.html">Traumatisme</a>
+              <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
+              <a href="tabac.html">Arrêt du tabac</a>
+              <a href="troubleDuSommeil.html">Trouble du sommeil</a>
+              <a href="stressAnxiete.html">Stress et Anxiété</a>
             </div>
           </div>
+          <a href="Psychogenealogie.html">Psychogénéalogie</a>
+          <a href="contact.html">Contact</a>
+          <a href="aProposDeMoi.html">À propos</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
         </div>
       </div>
     </header>
 
     <main>
-      <div
-        class="banner"
-        style="background-image: url('Heliosa/IMG-20250403-WA0001.jpg')"
+      <section
+        class="hero about-hero"
+        style="
+          background-image: linear-gradient(
+              rgba(32, 48, 102, 0.7),
+              rgba(236, 0, 140, 0.3)
+            ),
+            url('Heliosa/IMG-20250403-WA0001.jpg');
+          background-size: cover;
+          background-position: center;
+          color: #fff;
+          padding: 70px 0 40px 0;
+        "
       >
-        <div class="banner-overlay"></div>
-        <div class="container">
-          <div class="banner-content">
-            <h1 class="uppercase">
-              <strong>TRAITEMENT DES TRAUMATISMES</strong>
+        <div
+          class="container hero-content"
+          style="
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          "
+        >
+            <h1
+              style="
+                font-size: 2.5rem;
+                font-weight: 700;
+                margin-bottom: 10px;
+                letter-spacing: 1px;
+              "
+            >
+              Stress & Anxiété
             </h1>
-            <p>
-              <span style="font-size: 130%"
-                >L'hypnose est une méthode efficace pour traiter les
-                traumatismes et retrouver votre sérénité.</span
-              >
-            </p>
-            <a href="tel:0782835451" class="button">APPELEZ AUJOURD'HUI</a>
-          </div>
+            <h2
+              style="
+                font-size: 1.3rem;
+                font-weight: 400;
+                margin-bottom: 22px;
+                max-width: 700px;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            >
+              Retrouvez calme, sérénité et confiance grâce à l’hypnose thérapeutique.
+            </h2>
+            <a href="#pourquoi" class="cta-btn" style="margin-top: 10px"
+              >Pourquoi consulter&nbsp;?</a
+            >
         </div>
-      </div>
+      </section>
 
       <section class="section section-gray">
         <div class="container">
           <div class="row">
             <div class="col">
-              <h2 class="text-center">Vous souffrez de traumatismes mais...</h2>
-              <p>
-                ✓ Vous n'arrivez pas à vous en libérer<br />
-                ✓ Vous revivez régulièrement des expériences traumatiques<br />
-                ✓ Votre sommeil est perturbé par des cauchemars<br />
-                ✓ Vous êtes constamment en état d'hypervigilance<br />
-                ✓ Vous évitez certaines situations par peur<br />
-                ✓ Les thérapies classiques n'ont pas fonctionné
-              </p>
+              <h2 class="text-center">Vous souffrez de stress ou d’anxiété&nbsp;?</h2>
+              <ul style="max-width:600px;margin:0 auto 20px;line-height:1.8;">
+                <li>Vous ressentez une tension permanente ou des angoisses inexpliquées</li>
+                <li>Votre sommeil est perturbé par des ruminations ou des cauchemars</li>
+                <li>Vous avez du mal à lâcher prise ou à vous détendre</li>
+                <li>Vous évitez certaines situations par peur ou appréhension</li>
+                <li>Vous ressentez une perte de confiance ou d’estime de vous</li>
+                <li>Les solutions classiques n’ont pas fonctionné pour vous</li>
+              </ul>
               <div class="text-center">
-                <a href="tel:0782835451" class="button">JE VEUX EN PARLER</a>
+                <a href="contact.html" class="cta-btn">Je veux en parler</a>
               </div>
             </div>
           </div>
@@ -98,25 +112,19 @@
         <div class="container">
           <div class="row">
             <div class="col">
-              <h2 class="text-center">Hypnose pour traiter les traumatismes</h2>
-              <p>
-                Des études cliniques montrent que l'hypnose thérapeutique est
-                particulièrement efficace pour traiter les traumatismes
-                psychologiques et le stress post-traumatique, avec des résultats
-                rapides et durables.
-              </p>
-              <p>
-                Pourquoi ? Parce que l'hypnothérapie permet d'accéder
-                directement à la mémoire traumatique stockée dans l'inconscient
-                et de la retraiter de façon sécurisée, sans revivre l'intensité
-                émotionnelle du trauma.
-              </p>
-              <p>
-                L'hypnothérapie vous aide à transformer la perception de
-                l'événement traumatique et à créer de nouvelles associations
-                mentales positives qui vous permettront de vous libérer du
-                passé.
-              </p>
+              <h2 class="text-center">Les bienfaits de l’hypnose pour le stress et l’anxiété</h2>
+              <ul style="max-width:600px;margin:0 auto 20px;line-height:1.8;">
+                <li>Apaiser les tensions et retrouver un état de calme intérieur</li>
+                <li>Réduire les pensées envahissantes et les ruminations</li>
+                <li>Améliorer la qualité du sommeil</li>
+                <li>Renforcer la confiance en soi et l’estime personnelle</li>
+                <li>Développer des ressources pour mieux gérer les situations stressantes</li>
+                <li>Retrouver du plaisir et de la motivation au quotidien</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
             </div>
           </div>
         </div>
@@ -155,21 +163,24 @@
         <div class="container">
           <div class="row">
             <div class="col text-center">
-              <h2>Séance d'hypnose pour traiter un traumatisme</h2>
+              <h2>Déroulement d’une séance d’hypnose</h2>
               <p>
-                La séance d'hypnose dure 60 à 90 minutes à 87 € dans mon cabinet
-                à Strasbourg ou à distance.
+                La séance dure 60 à 90 minutes (87&nbsp;€) en cabinet à Strasbourg ou à distance.
               </p>
               <p>
-                Des techniques spécifiques de distanciation et de retraitement
-                émotionnel sont utilisées pour aborder le traumatisme en toute
-                sécurité.
+                Des techniques personnalisées sont utilisées pour apaiser le stress, l’anxiété ou les traumatismes, dans un cadre sécurisant et bienveillant.
               </p>
               <p>
-                Un suivi personnalisé est proposé selon vos besoins pour
-                consolider les progrès et renforcer votre résilience.
+                Un suivi sur-mesure est proposé pour consolider vos progrès et renforcer votre sérénité.
               </p>
-              <a href="tel:0782835451" class="button">Appelez-moi</a>
+              <a href="contact.html" class="cta-btn">Prendre rendez-vous</a>
+              <a
+                href="tel:0782835451"
+                class="cta-btn"
+                style="background: var(--secondary-color); color: #fff; margin-left: 10px;"
+              >
+                Appelez-moi
+              </a>
             </div>
           </div>
         </div>
@@ -180,99 +191,83 @@
           <div class="row">
             <div class="col">
               <h2 class="text-center">Questions fréquentes</h2>
-              <h3>
-                Vais-je devoir revivre mon traumatisme pendant la séance ?
-              </h3>
-              <p>
-                Non, l'hypnothérapie que je pratique utilise des techniques de
-                distanciation qui vous permettent de travailler sur le
-                traumatisme sans revivre les émotions douloureuses. Votre
-                sécurité émotionnelle est ma priorité absolue.
-              </p>
+              <h3>L’hypnose va-t-elle me faire perdre le contrôle&nbsp;?</h3>
+              <p>Non, vous restez maître de vous-même pendant toute la séance. L’hypnose thérapeutique est un état de conscience modifiée, mais vous entendez tout et pouvez interrompre la séance à tout moment.</p>
 
-              <h3>
-                Combien de séances seront nécessaires pour traiter mon
-                traumatisme ?
-              </h3>
-              <p>
-                Chaque personne est unique, mais généralement entre 3 et 6
-                séances sont nécessaires pour traiter efficacement un
-                traumatisme. Les traumatismes complexes ou multiples peuvent
-                nécessiter un accompagnement plus long.
-              </p>
+              <h3>Dois-je revivre des souvenirs difficiles&nbsp;?</h3>
+              <p>Non, l’hypnose permet d’aborder les sources de stress ou d’anxiété sans revivre les émotions douloureuses. Les techniques utilisées sont douces et respectueuses de votre rythme.</p>
 
-              <h3>L'hypnose peut-elle traiter tous types de traumatismes ?</h3>
-              <p>
-                L'hypnose est efficace pour la plupart des traumatismes
-                psychologiques, qu'ils soient récents ou anciens. Elle donne
-                d'excellents résultats pour les accidents, agressions, deuils
-                traumatiques, traumatismes de l'enfance et stress
-                post-traumatique. Une évaluation personnalisée lors de la
-                première séance permettra de déterminer l'approche la plus
-                adaptée à votre situation.
-              </p>
+              <h3>Combien de séances sont nécessaires&nbsp;?</h3>
+              <p>Chaque personne est unique, mais en général, 3 à 6 séances suffisent pour observer une nette amélioration du stress ou de l’anxiété. Un accompagnement personnalisé est proposé selon vos besoins.</p>
+
+              <h3>L’hypnose fonctionne-t-elle si je suis très anxieux(se)&nbsp;?</h3>
+              <p>Oui, l’hypnose est particulièrement adaptée aux personnes anxieuses ou stressées. Même si vous avez du mal à lâcher prise, l’accompagnement progressif permet d’atteindre un état de détente bénéfique.</p>
+
+              <h3>Est-ce compatible avec un suivi médical ou psychologique&nbsp;?</h3>
+              <p>Oui, l’hypnose peut compléter un suivi médical ou psychologique. N’hésitez pas à en parler à votre médecin ou thérapeute si besoin.</p>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <div class="footer-widgets">
-          <div class="widget">
-            <span class="widget-title">QUI SUIS-JE ?</span>
-            <p>
-              Hypnothérapeute, je pratique l'hypnose ericksonienne à Strasbourg
-              et en ligne. Créatrice d'audio d'auto-hypnose accessibles à tous,
-              favorisant ainsi l'épanouissement et développement personnel.
-            </p>
-          </div>
-
-          <div class="widget">
-            <span class="widget-title">À propos</span>
-            <ul>
-              <li><a href="#">Mentions légales</a></li>
-              <li><a href="#">Conditions générales de vente</a></li>
-              <li><a href="#">Confidentialité et Cookies</a></li>
-            </ul>
-          </div>
-
-          <div class="widget">
-            <span class="widget-title">Adresse</span>
-            <p>
-              Esther Allier – Hypnothérapeute<br />
-              10 Rue du Général de Castelnau<br />
-              Espace Castelnau<br />
-              67000 STRASBOURG
-            </p>
+    <footer class="main-footer">
+      <div class="container footer-flex">
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p>
+            Esther Allier<br />Cabinet d’hypnose à Strasbourg<br />Email :
+            <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a
+            ><br />Tél : <a href="tel:+33612345678">06 12 34 56 78</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="aProposDeMoi.html">À propos</a></li>
+            <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Adresse</h3>
+          <p>
+            Esther Allier – Hypnothérapeute<br />
+            10 Rue du Général de Castelnau<br />
+            Espace Castelnau<br />
+            67000 STRASBOURG
+          </p>
+          <h3>Suivez-moi</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                alt="Instagram"
+            /></a>
+            <a href="#" aria-label="Facebook"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                alt="Facebook"
+            /></a>
           </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Esther Allier. Tous droits réservés. |
+          <a href="#">Mentions légales</a>
+        </p>
       </div>
     </footer>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const hamburger = document.getElementById("hamburger");
-        const navLinks = document.getElementById("nav-links");
-        const dropdowns = document.querySelectorAll(".dropdown");
-
-        // Toggle mobile menu
-        hamburger.addEventListener("click", function () {
-          hamburger.classList.toggle("active");
-          navLinks.classList.toggle("active");
-        });
-
-        // Handle dropdowns on mobile
-        if (window.innerWidth <= 768) {
-          dropdowns.forEach((dropdown) => {
-            const dropdownBtn = dropdown.querySelector(".dropbtn");
-            dropdownBtn.addEventListener("click", function (e) {
-              e.preventDefault();
-              dropdown.classList.toggle("active");
-            });
-          });
-        }
+      // Menu burger responsive
+      const hamburger = document.getElementById("hamburger");
+      const nav = document.getElementById("main-nav");
+      hamburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        hamburger.classList.toggle("open");
       });
     </script>
   </body>

@@ -13,71 +13,133 @@
   </head>
 
   <body>
-    <header>
-      <div class="container">
-        <div class="header-main">
-          <div class="nav-container">
-            <div class="logo">
-              <a href="index.html">
-                <img
-                  src="https://images.pexels.com/photos/6787202/pexels-photo-6787202.jpeg"
-                  alt="Esther Allier Hypnose"
-                  style="max-height: 100px"
-                />
-              </a>
-            </div>
-
-            <div class="nav-main">
-              <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-
-              <nav class="nav-links" id="nav-links">
-                <a href="index.html">ACCUEIL</a>
-                <div class="dropdown">
-                  <a href="#" class="dropbtn">HYPNOSE</a>
-                  <div class="dropdown-content">
-                    <a href="traumatisme.html">Traumatisme</a>
-                    <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
-                    <a href="tabac.html">Arrêt du tabac</a>
-                    <a href="troubleDuSommeil.html">Trouble du sommeil</a>
-                    <a href="stressAnxiete.html">Stress et Anxiété</a>
-                  </div>
-                </div>
-                <a href="Psychogenealogie.html">PSYCHOGÉNÉALOGIE</a>
-                <a href="contact.html">CONTACT</a>
-                <a href="aProposDeMoi.html">A PROPOS DE MOI</a>
-              </nav>
+    <header class="main-header">
+      <div class="container header-flex">
+        <a
+          href="index.html"
+          class="logo"
+          style="
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            color: #203066;
+            letter-spacing: 1px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          "
+        >
+          <span
+            style="
+              display: inline-block;
+              background: linear-gradient(90deg, #203066 60%, #ec008c 100%);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+            "
+            >Esther Allier</span
+          >
+          <span
+            style="
+              font-size: 1.1rem;
+              font-weight: 400;
+              color: #ec008c;
+              margin-left: 2px;
+            "
+            >Hypnose</span
+          >
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <a href="index.html">Accueil</a>
+          <div class="dropdown">
+            <a href="#" class="dropbtn">Hypnose</a>
+            <div class="dropdown-content">
+              <a href="traumatisme.html">Traumatisme</a>
+              <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
+              <a href="tabac.html">Arrêt du tabac</a>
+              <a href="troubleDuSommeil.html">Trouble du sommeil</a>
+              <a href="stressAnxiete.html">Stress et Anxiété</a>
             </div>
           </div>
+          <a href="Psychogenealogie.html">Psychogénéalogie</a>
+          <a href="contact.html">Contact</a>
+          <a href="aProposDeMoi.html">À propos</a>
+        </nav>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
         </div>
       </div>
     </header>
 
     <main>
-      <div
-        class="banner"
+      <section
+        class="hero about-hero"
         style="
-          background-image: url('https://images.pexels.com/photos/6146960/pexels-photo-6146960.jpeg');
+          background-image: linear-gradient(
+              rgba(32, 48, 102, 0.7),
+              rgba(236, 0, 140, 0.3)
+            ),
+            url('https://images.pexels.com/photos/6146960/pexels-photo-6146960.jpeg');
+          background-size: cover;
+          background-position: center;
+          color: #fff;
+          padding: 70px 0 40px 0;
         "
       >
-        <div class="banner-overlay"></div>
+        <div
+          class="container hero-content"
+          style="
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          <h1
+            style="
+              font-size: 2.5rem;
+              font-weight: 700;
+              margin-bottom: 10px;
+              letter-spacing: 1px;
+            "
+          >
+            Psychogénéalogie & Hypnose
+          </h1>
+          <h2
+            style="
+              font-size: 1.3rem;
+              font-weight: 400;
+              margin-bottom: 22px;
+              max-width: 700px;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          >
+            Libérez-vous des schémas familiaux inconscients et révélez votre
+            potentiel grâce à l’exploration de votre histoire familiale.
+          </h2>
+          <a href="#method" class="cta-btn" style="margin-top: 10px"
+            >Découvrir la méthode</a
+          >
+        </div>
+      </section>
+      <!-- Pourquoi explorer votre histoire familiale ? -->
+      <section class="section">
         <div class="container">
-          <div class="banner-content">
-            <h1 class="uppercase"><strong>PSYCHOGÉNÉALOGIE</strong></h1>
-            <p>
-              <span style="font-size: 140%"
-                >Explorer votre arbre généalogique pour comprendre et vous
-                libérer des schémas familiaux qui vous limitent
-                aujourd'hui.</span
-              >
-            </p>
-            <a href="tel:0782835451" class="button">APPELEZ AUJOURD'HUI</a>
+          <div class="row">
+            <div class="col text-center">
+              <h2>Pourquoi explorer votre histoire familiale&nbsp;?</h2>
+              <p style="max-width: 700px; margin: 0 auto 20px">
+                Notre histoire familiale influence souvent nos choix, nos
+                émotions et nos blocages, parfois à notre insu. Comprendre ces
+                héritages invisibles, c’est se donner la possibilité de s’en
+                libérer et d’ouvrir de nouvelles perspectives pour soi et pour
+                les générations futures.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       <section class="section section-gray">
         <div class="container">
@@ -182,26 +244,46 @@
         <div class="container">
           <div class="row">
             <div class="col text-center">
-              <h2>Déroulement des séances</h2>
-              <p>
+              <h2>Déroulement d’un accompagnement</h2>
+              <p style="max-width: 700px; margin: 0 auto 20px">
                 Le travail en psychogénéalogie se déroule généralement sur 3 à 5
-                séances :
+                séances, selon votre histoire et vos besoins&nbsp;:
               </p>
-              <p>
-                <strong>1ère séance (90 min) :</strong> Entretien initial et
-                construction de votre génosociogramme<br />
-                <strong>2ème séance (60-90 min) :</strong> Exploration des liens
-                transgénérationnels sous hypnose<br />
-                <strong>3ème séance (60-90 min) :</strong> Travail de libération
-                des schémas identifiés<br />
-                <strong>Séances suivantes :</strong> Approfondissement si
-                nécessaire
-              </p>
-              <p>
-                Tarif : 87€ la séance - possibilité de forfait pour le parcours
+              <ul
+                style="max-width: 600px; margin: 0 auto 20px; text-align: left"
+              >
+                <li>
+                  <strong>1<sup>ère</sup> séance (90 min)&nbsp;:</strong>
+                  Entretien initial et construction de votre génosociogramme
+                </li>
+                <li>
+                  <strong>2<sup>ème</sup> séance (60-90 min)&nbsp;:</strong>
+                  Exploration des liens transgénérationnels sous hypnose
+                </li>
+                <li>
+                  <strong>3<sup>ème</sup> séance (60-90 min)&nbsp;:</strong>
+                  Travail de libération des schémas identifiés
+                </li>
+                <li>
+                  <strong>Séances suivantes&nbsp;:</strong> Approfondissement si
+                  nécessaire
+                </li>
+              </ul>
+              <p style="margin-bottom: 18px">
+                Tarif : 87&nbsp;€ la séance – forfait possible pour le parcours
                 complet
               </p>
-              <a href="tel:0782835451" class="button">PRENDRE RENDEZ-VOUS</a>
+              <a href="contact.html" class="cta-btn">Prendre rendez-vous</a>
+              <a
+                href="tel:0782835451"
+                class="cta-btn"
+                style="
+                  background: var(--secondary-color);
+                  color: #fff;
+                  margin-left: 10px;
+                "
+                >Appelez-moi</a
+              >
             </div>
           </div>
         </div>
@@ -248,62 +330,63 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <div class="footer-widgets">
-          <div class="widget">
-            <span class="widget-title">QUI SUIS-JE ?</span>
-            <p>
-              Hypnothérapeute, je pratique l'hypnose ericksonienne à Strasbourg
-              et en ligne. Créatrice d'audio d'auto-hypnose accessibles à tous,
-              favorisant ainsi l'épanouissement et développement personnel.
-            </p>
-          </div>
-
-          <div class="widget">
-            <span class="widget-title">À propos</span>
-            <ul>
-              <li><a href="#">Mentions légales</a></li>
-              <li><a href="#">Conditions générales de vente</a></li>
-              <li><a href="#">Confidentialité et Cookies</a></li>
-            </ul>
-          </div>
-
-          <div class="widget">
-            <span class="widget-title">Adresse</span>
-            <p>
-              Esther Allier – Hypnothérapeute<br />
-              10 Rue du Général de Castelnau<br />
-              Espace Castelnau<br />
-              67000 STRASBOURG
-            </p>
+    <footer class="main-footer">
+      <div class="container footer-flex">
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <p>
+            Esther Allier<br />Cabinet d’hypnose à Strasbourg<br />Email :
+            <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a
+            ><br />Tél : <a href="tel:+33612345678">06 12 34 56 78</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="aProposDeMoi.html">À propos</a></li>
+            <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Adresse</h3>
+          <p>
+            Esther Allier – Hypnothérapeute<br />
+            10 Rue du Général de Castelnau<br />
+            Espace Castelnau<br />
+            67000 STRASBOURG
+          </p>
+          <h3>Suivez-moi</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                alt="Instagram"
+            /></a>
+            <a href="#" aria-label="Facebook"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
+                alt="Facebook"
+            /></a>
           </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 Esther Allier. Tous droits réservés. |
+          <a href="#">Mentions légales</a>
+        </p>
       </div>
     </footer>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const hamburger = document.getElementById("hamburger");
-        const navLinks = document.getElementById("nav-links");
-        const dropdowns = document.querySelectorAll(".dropdown");
-
-        // Toggle mobile menu
-        hamburger.addEventListener("click", function () {
-          hamburger.classList.toggle("active");
-          navLinks.classList.toggle("active");
-        });
-
-        // Handle dropdowns on mobile
-        if (window.innerWidth <= 768) {
-          dropdowns.forEach((dropdown) => {
-            const dropdownBtn = dropdown.querySelector(".dropbtn");
-            dropdownBtn.addEventListener("click", function (e) {
-              e.preventDefault();
-              dropdown.classList.toggle("active");
-            });
-          });
-        }
+      // Menu burger responsive
+      const hamburger = document.getElementById("hamburger");
+      const nav = document.getElementById("main-nav");
+      hamburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+        hamburger.classList.toggle("open");
       });
     </script>
   </body>

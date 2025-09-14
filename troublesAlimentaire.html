@@ -1,187 +1,225 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Troubles alimentaires et hypnose • Esther ALLIER</title>
+    <title>Troubles Alimentaires et Hypnose • Esther Allier</title>
+    <meta
+      name="description"
+      content="Hypnose pour troubles alimentaires à Strasbourg. Libérez-vous des compulsions alimentaires et retrouvez une relation saine avec la nourriture."
+    />
+    <link rel="stylesheet" href="modern-styles.css" />
   </head>
 
   <body>
-    <header class="main-header">
-      <div class="container header-flex">
-        <a
-          href="index.html"
-          class="logo"
-          style="
-            font-family: 'Montserrat', Arial, sans-serif;
-            font-weight: 700;
-            font-size: 2rem;
-            color: #203066;
-            letter-spacing: 1px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-          "
-        >
-          <span
-            style="
-              display: inline-block;
-              background: linear-gradient(90deg, #203066 60%, #ec008c 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-              text-fill-color: transparent;
-            "
-            >Esther Allier</span
-          >
-          <span
-            style="
-              font-size: 1.1rem;
-              font-weight: 400;
-              color: #ec008c;
-              margin-left: 2px;
-            "
-            >Hypnose</span
-          >
-        </a>
-        <nav class="main-nav" id="main-nav">
-          <a href="index.html">Accueil</a>
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Hypnose</a>
-            <div class="dropdown-content">
-              <a href="traumatisme.html">Traumatisme</a>
-              <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
-              <a href="tabac.html">Arrêt du tabac</a>
-              <a href="troubleDuSommeil.html">Trouble du sommeil</a>
-              <a href="stressAnxiete.html">Stress et Anxiété</a>
+    <!-- Header moderne -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span class="highlight">Esther</span> Allier
+          </a>
+
+          <nav class="nav" id="mainNav">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <div class="dropdown">
+              <div class="dropdown-trigger nav-link">
+                Hypnose
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="dropdown-menu">
+                <a href="traumatisme.html" class="dropdown-item"
+                  >Traumatismes</a
+                >
+                <a href="troublesAlimentaire.html" class="dropdown-item active"
+                  >Troubles Alimentaires</a
+                >
+                <a href="tabac.html" class="dropdown-item">Arrêt du Tabac</a>
+                <a href="troubleDuSommeil.html" class="dropdown-item"
+                  >Troubles du Sommeil</a
+                >
+                <a href="stressAnxiete.html" class="dropdown-item"
+                  >Stress & Anxiété</a
+                >
+              </div>
             </div>
-          </div>
-          <a href="Psychogenealogie.html">Psychogénéalogie</a>
-          <a href="contact.html">Contact</a>
-          <a href="aProposDeMoi.html">À propos</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
+            <a href="Psychogenealogie.html" class="nav-link"
+              >Psychogénéalogie</a
+            >
+            <a href="aProposDeMoi.html" class="nav-link">À propos</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
 
     <main>
-      <section
-        class="hero about-hero"
-        style="
-          background-image: linear-gradient(
-              rgba(32, 48, 102, 0.7),
-              rgba(236, 0, 140, 0.3)
-            ),
-            url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg');
-          background-size: cover;
-          background-position: center;
-          color: #fff;
-          padding: 70px 0 40px 0;
-        "
-      >
-        <div
-          class="container hero-content"
-          style="
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          "
-        >
-          <h1
-            style="
-              font-size: 2.5rem;
-              font-weight: 700;
-              margin-bottom: 10px;
-              letter-spacing: 1px;
-            "
-          >
-            Se libérer des troubles alimentaires
-          </h1>
-          <h2
-            style="
-              font-size: 1.3rem;
-              font-weight: 400;
-              margin-bottom: 22px;
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          >
-            L’hypnose est une méthode efficace et bienveillante pour retrouver
-            une relation saine à l’alimentation et à son corps.
-          </h2>
-          <a href="#pourquoi" class="cta-btn" style="margin-top: 10px"
-            >Pourquoi choisir l’hypnose&nbsp;?</a
-          >
-        </div>
-      </section>
-      <!-- Section Pourquoi choisir l’hypnose ? -->
-      <section class="section highlight-section" id="pourquoi">
+      <!-- Hero Section -->
+      <section class="hero">
         <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>
-                Pourquoi choisir l’hypnose pour les troubles alimentaires&nbsp;?
-              </h2>
-              <p>
-                L’hypnose agit sur les causes inconscientes des troubles
-                alimentaires&nbsp;: émotions, croyances, compulsions, image de
-                soi. Elle permet de retrouver l’équilibre, l’estime de soi et le
-                plaisir de manger sereinement.
+          <div class="hero-content">
+            <div class="hero-text animate-fade-in-left text-center">
+              <h1 class="hero-title">
+                Se libérer des
+                <span class="highlight">troubles alimentaires</span>
+              </h1>
+              <p class="hero-subtitle">
+                L'hypnose est une méthode efficace et bienveillante pour
+                retrouver une relation saine à l'alimentation et à son corps.
               </p>
-              <ul class="checklist">
-                <li>Approche bienveillante et personnalisée</li>
-                <li>Gestion des compulsions et des émotions</li>
-                <li>Amélioration de l’image corporelle</li>
-                <li>Retrouver la liberté alimentaire</li>
-                <li>Renforcement de la confiance en soi</li>
-              </ul>
-              <a href="contact.html" class="cta-btn">Prendre rendez-vous</a>
+              <a href="#pourquoi" class="btn btn-primary btn-lg">
+                Pourquoi choisir l'hypnose ?
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-gray">
+      <!-- Section Pourquoi choisir l'hypnose -->
+      <section id="pourquoi" class="section bg-white">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">
-                Vous souffrez de troubles alimentaires si…
-              </h2>
-              <ul class="checklist">
-                <li>Vous mangez de façon compulsive ou émotionnelle</li>
-                <li>Vous alternez entre restriction et excès</li>
-                <li>Vous ressentez de la culpabilité après avoir mangé</li>
-                <li>Vous avez une image négative de votre corps</li>
-                <li>Les régimes n’ont pas fonctionné</li>
-              </ul>
-              <div class="text-center" style="margin-top: 18px">
-                <a href="tel:0782835451" class="cta-btn">Je veux en parler</a>
-              </div>
-            </div>
+          <div class="text-center mb-16">
+            <h2>Pourquoi choisir l'hypnose pour les troubles alimentaires ?</h2>
+            <p class="section-subtitle">
+              L'hypnose agit sur les causes inconscientes des troubles
+              alimentaires : émotions, croyances, compulsions, image de soi.
+              Elle permet de retrouver l'équilibre, l'estime de soi et le
+              plaisir de manger sereinement.
+            </p>
           </div>
-        </div>
-      </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">
-                Hypnose pour les troubles alimentaires
-              </h2>
+          <div class="grid grid-cols-auto gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🤗</div>
+              <h3 class="mb-4">Approche bienveillante</h3>
               <p>
-                Des études montrent que l’hypnose est efficace pour modifier les
+                Une thérapie personnalisée et sans jugement pour vous
+                accompagner en douceur.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🧠</div>
+              <h3 class="mb-4">Gestion des émotions</h3>
+              <p>
+                Apprenez à identifier et gérer les émotions liées aux
+                compulsions alimentaires.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">💪</div>
+              <h3 class="mb-4">Image corporelle</h3>
+              <p>
+                Retrouvez une image positive de votre corps et renforcez votre
+                confiance en vous.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="contact.html" class="btn btn-primary btn-lg"
+              >Prendre rendez-vous</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Symptômes -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Vous souffrez de troubles alimentaires si...</h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-8 mb-12">
+            <div class="card p-8">
+              <h3 class="mb-6">🔄 Comportements compulsifs</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Vous mangez de façon compulsive ou émotionnelle</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Vous alternez entre restriction et excès</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span
+                    >Vous ressentez de la culpabilité après avoir mangé</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="card p-8">
+              <h3 class="mb-6">😔 Impact émotionnel</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Vous avez une image négative de votre corps</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Les régimes n'ont pas fonctionné</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>L'alimentation occupe trop vos pensées</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="tel:0782835451" class="btn btn-secondary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              Je veux en parler
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Comment ça marche -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Comment l'hypnose aide-t-elle ?</h2>
+              <p>
+                Des études montrent que l'hypnose est efficace pour modifier les
                 comportements alimentaires, réduire les compulsions et améliorer
-                l’estime de soi.
+                l'estime de soi.
               </p>
               <p>
-                L’hypnothérapie agit sur les schémas inconscients qui perturbent
+                L'hypnothérapie agit sur les schémas inconscients qui perturbent
                 la relation à la nourriture et au corps, pour retrouver
                 équilibre et sérénité.
               </p>
@@ -190,182 +228,376 @@
                 vous libérer de la culpabilité et à retrouver le plaisir de
                 manger.
               </p>
+              <a href="contact.html" class="btn btn-primary"
+                >Commencer mon accompagnement</a
+              >
+            </div>
+            <div class="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Alimentation saine et équilibrée"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-gray">
+      <!-- Section Informations pratiques -->
+      <section class="section bg-gray-50">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Comprendre les troubles alimentaires</h2>
-              <p>
-                Les troubles alimentaires sont souvent liés à des émotions, des
-                croyances ou des événements passés. Ils peuvent prendre la forme
-                de compulsions, de restrictions, de grignotages ou d’obsessions
-                alimentaires.
-              </p>
-              <p>
-                L’hypnose permet de travailler sur l’origine du trouble,
-                d’apaiser les émotions et de retrouver une relation apaisée à la
-                nourriture et à soi-même.
-              </p>
-              <p>
-                Retrouver l’équilibre alimentaire, c’est retrouver la liberté,
-                la confiance et le plaisir de vivre&nbsp;!
+          <div class="text-center mb-16">
+            <h2>Séance d'hypnose pour les troubles alimentaires</h2>
+          </div>
+
+          <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">⏰</div>
+              <h3 class="mb-4">Durée</h3>
+              <p class="text-lg font-bold text-primary">60 à 90 minutes</p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">💰</div>
+              <h3 class="mb-4">Tarif</h3>
+              <p class="text-lg font-bold text-primary">87 €</p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">📍</div>
+              <h3 class="mb-4">Lieu</h3>
+              <p class="text-lg font-bold text-primary">
+                Strasbourg ou à distance
               </p>
             </div>
+          </div>
+
+          <div class="card p-8 text-center">
+            <h3 class="mb-6">Méthodes utilisées</h3>
+            <p class="mb-6">
+              Des techniques spécifiques de gestion des émotions, de
+              visualisation et de suggestion sont utilisées pour retrouver une
+              relation sereine à l'alimentation.
+            </p>
+            <p class="mb-8">
+              Un suivi personnalisé est proposé pour consolider les progrès et
+              retrouver durablement l'équilibre alimentaire.
+            </p>
+            <a href="tel:0782835451" class="btn btn-primary btn-lg"
+              >Appelez-moi</a
+            >
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <!-- Section Conseils -->
+      <section class="section bg-white">
         <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Séance d'hypnose pour les troubles alimentaires</h2>
-              <p>
-                <strong>Durée&nbsp;:</strong> 60 à 90 minutes<br />
-                <strong>Tarif&nbsp;:</strong> 87 €<br />
-                <strong>Lieu&nbsp;:</strong> Cabinet à Strasbourg ou à distance
-              </p>
-              <p>
-                Des techniques spécifiques de gestion des émotions, de
-                visualisation et de suggestion sont utilisées pour retrouver une
-                relation sereine à l’alimentation.
-              </p>
-              <p>
-                Un suivi personnalisé est proposé pour consolider les progrès et
-                retrouver durablement l’équilibre alimentaire.
-              </p>
-              <a href="tel:0782835451" class="cta-btn">Appelez-moi</a>
-            </div>
+          <div class="text-center mb-16">
+            <h2>Conseils pour retrouver l'équilibre alimentaire</h2>
           </div>
-        </div>
-      </section>
-      <!-- Section Conseils alimentation -->
-      <section class="section tips-section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">
-                Conseils pour retrouver l’équilibre alimentaire
-              </h2>
-              <ul class="checklist">
-                <li>Écoutez vos sensations de faim et de satiété</li>
-                <li>
-                  Accueillez vos émotions sans les compenser par la nourriture
+
+          <div class="grid grid-cols-2 gap-8">
+            <div class="card p-8">
+              <h3 class="mb-6">🎯 Écoute de soi</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Écoutez vos sensations de faim et de satiété</span>
                 </li>
-                <li>Évitez les régimes restrictifs</li>
-                <li>Privilégiez le plaisir et la variété dans l’assiette</li>
-                <li>Faites-vous accompagner si besoin</li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span
+                    >Accueillez vos émotions sans les compenser par la
+                    nourriture</span
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="card p-8">
+              <h3 class="mb-6">🌈 Plaisir alimentaire</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Évitez les régimes restrictifs</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span
+                    >Privilégiez le plaisir et la variété dans l'assiette</span
+                  >
+                </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-gray">
+      <!-- FAQ Section -->
+      <section class="section bg-gray-50">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Questions fréquentes</h2>
-              <h3>
-                L’hypnose peut-elle m’aider à sortir des compulsions
-                alimentaires&nbsp;?
-              </h3>
-              <p>
-                Oui, l’hypnose est très efficace pour apaiser les compulsions,
-                les grignotages et retrouver une relation apaisée à la
-                nourriture.
-              </p>
-              <h3>Combien de séances sont nécessaires&nbsp;?</h3>
-              <p>
-                Cela dépend de chaque personne, mais souvent 2 à 5 séances
-                suffisent pour observer une nette amélioration.
-              </p>
-              <h3>Vais-je perdre du poids avec l’hypnose&nbsp;?</h3>
-              <p>
-                L’objectif de l’hypnose est d’abord de retrouver l’équilibre et
-                la sérénité alimentaire. La perte de poids peut en découler
-                naturellement, sans régime ni frustration.
-              </p>
-              <h3>L’hypnose est-elle adaptée à tous les âges&nbsp;?</h3>
-              <p>
-                Oui, l’hypnose est douce et adaptée aux enfants, adolescents et
-                adultes.
-              </p>
-              <h3>Et si je rechute&nbsp;?</h3>
-              <p>
-                Une rechute n’est pas un échec, mais une étape d’apprentissage.
-                L’accompagnement permet de comprendre ce qui s’est passé et de
-                renforcer votre motivation.
-              </p>
+          <div class="text-center mb-16">
+            <h2>Questions fréquentes</h2>
+          </div>
+
+          <div class="max-w-4xl mx-auto space-y-6">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>
+                  L'hypnose peut-elle m'aider à sortir des compulsions
+                  alimentaires ?
+                </h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Oui, l'hypnose est très efficace pour apaiser les compulsions,
+                  les grignotages et retrouver une relation apaisée à la
+                  nourriture.
+                </p>
+              </div>
             </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Combien de séances sont nécessaires ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Cela dépend de chaque personne, mais souvent 2 à 5 séances
+                  suffisent pour observer une nette amélioration.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Vais-je perdre du poids avec l'hypnose ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  L'objectif de l'hypnose est d'abord de retrouver l'équilibre
+                  et la sérénité alimentaire. La perte de poids peut en découler
+                  naturellement, sans régime ni frustration.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>L'hypnose est-elle adaptée à tous les âges ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Oui, l'hypnose est douce et adaptée aux enfants, adolescents
+                  et adultes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section bg-gradient">
+        <div class="container text-center">
+          <h2 class="text-white mb-6">
+            Prêt(e) à retrouver la liberté alimentaire ?
+          </h2>
+          <p class="text-white text-xl mb-8 max-w-2xl mx-auto">
+            Contactez-moi dès aujourd'hui pour commencer votre transformation
+            vers une relation saine avec l'alimentation.
+          </p>
+          <div class="flex gap-4 justify-center">
+            <a href="tel:+33782835451" class="btn btn-primary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              07 82 83 54 51
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              Formulaire de contact
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="container footer-flex">
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>
-            Esther Allier<br />Cabinet d’hypnose à Strasbourg<br />Email :
-            <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a
-            ><br />Tél : <a href="tel:+33612345678">06 12 34 56 78</a>
-          </p>
-        </div>
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="aProposDeMoi.html">À propos</a></li>
-            <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Adresse</h3>
-          <p>
-            Esther Allier – Hypnothérapeute<br />
-            10 Rue du Général de Castelnau<br />
-            Espace Castelnau<br />
-            67000 STRASBOURG
-          </p>
-          <h3>Suivez-moi</h3>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                alt="Instagram"
-            /></a>
-            <a href="#" aria-label="Facebook"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                alt="Facebook"
-            /></a>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>
+              <strong>Esther Allier</strong><br />
+              Hypnothérapeute certifiée
+            </p>
+            <p>
+              📧
+              <a href="mailto:contact@estherallier.fr"
+                >contact@estherallier.fr</a
+              >
+            </p>
+            <p>📞 <a href="tel:+33782835451">07 82 83 54 51</a></p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="aProposDeMoi.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Adresse</h3>
+            <p>
+              <strong>Cabinet d'hypnose</strong><br />
+              10 Rue du Général de Castelnau<br />
+              Espace Castelnau<br />
+              67000 STRASBOURG
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Horaires</h3>
+            <p>
+              <strong>Lundi - Vendredi</strong><br />
+              9h00 - 19h00
+            </p>
+            <p>
+              <strong>Samedi</strong><br />
+              9h00 - 17h00
+            </p>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          &copy; 2025 Esther Allier. Tous droits réservés. |
-          <a href="#">Mentions légales</a>
-        </p>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Esther Allier. Tous droits réservés. |
+            <a href="#">Mentions légales</a>
+          </p>
+        </div>
       </div>
     </footer>
 
     <script>
-      // Menu burger responsive
-      const hamburger = document.getElementById("hamburger");
-      const nav = document.getElementById("main-nav");
-      hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        hamburger.classList.toggle("open");
+      // Menu mobile
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenuBtn.classList.toggle("active");
+        mainNav.classList.toggle("mobile-open");
       });
+
+      // Header scroll effect
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // FAQ Toggle
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const faqItem = question.parentElement;
+          const answer = faqItem.querySelector(".faq-answer");
+          const icon = question.querySelector("svg");
+
+          faqItem.classList.toggle("active");
+
+          if (faqItem.classList.contains("active")) {
+            answer.style.display = "block";
+            icon.style.transform = "rotate(180deg)";
+          } else {
+            answer.style.display = "none";
+            icon.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document
+        .querySelectorAll(
+          ".animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right"
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+          el.style.transition = "all 0.6s ease-out";
+          observer.observe(el);
+        });
     </script>
   </body>
 </html>

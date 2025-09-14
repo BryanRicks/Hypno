@@ -1,274 +1,609 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Traumatisme et hypnose • Esther ALLIER</title>
+    <title>Gestion du Stress et de l'Anxiété • Esther Allier</title>
+    <meta
+      name="description"
+      content="Hypnose pour gérer le stress et l'anxiété à Strasbourg. Retrouvez calme et sérénité grâce à des techniques douces et efficaces."
+    />
+    <link rel="stylesheet" href="modern-styles.css" />
   </head>
 
   <body>
-    <header class="main-header">
-      <div class="container header-flex">
-        <a href="index.html" class="logo" style="font-family: 'Montserrat', Arial, sans-serif; font-weight: 700; font-size: 2rem; color: #203066; letter-spacing: 1px; text-decoration: none; display: flex; align-items: center; gap: 8px;">
-          <span style="display: inline-block; background: linear-gradient(90deg, #203066 60%, #ec008c 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Esther Allier</span>
-          <span style="font-size: 1.1rem; font-weight: 400; color: #ec008c; margin-left: 2px;">Hypnose</span>
-        </a>
-        <nav class="main-nav" id="main-nav">
-          <a href="index.html">Accueil</a>
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Hypnose</a>
-            <div class="dropdown-content">
-              <a href="traumatisme.html">Traumatisme</a>
-              <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
-              <a href="tabac.html">Arrêt du tabac</a>
-              <a href="troubleDuSommeil.html">Trouble du sommeil</a>
-              <a href="stressAnxiete.html">Stress et Anxiété</a>
+    <!-- Header moderne -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span class="highlight">Esther</span> Allier
+          </a>
+
+          <nav class="nav" id="mainNav">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <div class="dropdown">
+              <div class="dropdown-trigger nav-link">
+                Hypnose
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="dropdown-menu">
+                <a href="traumatisme.html" class="dropdown-item">Traumatismes</a>
+                <a href="troublesAlimentaire.html" class="dropdown-item">Troubles Alimentaires</a>
+                <a href="tabac.html" class="dropdown-item">Arrêt du Tabac</a>
+                <a href="troubleDuSommeil.html" class="dropdown-item">Troubles du Sommeil</a>
+                <a href="stressAnxiete.html" class="dropdown-item active">Stress & Anxiété</a>
+              </div>
             </div>
-          </div>
-          <a href="Psychogenealogie.html">Psychogénéalogie</a>
-          <a href="contact.html">Contact</a>
-          <a href="aProposDeMoi.html">À propos</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
+            <a href="Psychogenealogie.html" class="nav-link">Psychogénéalogie</a>
+            <a href="aProposDeMoi.html" class="nav-link">À propos</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
 
     <main>
-      <section
-        class="hero about-hero"
-        style="
-          background-image: linear-gradient(
-              rgba(32, 48, 102, 0.7),
-              rgba(236, 0, 140, 0.3)
-            ),
-            url('Heliosa/IMG-20250403-WA0001.jpg');
-          background-size: cover;
-          background-position: center;
-          color: #fff;
-          padding: 70px 0 40px 0;
-        "
-      >
-        <div
-          class="container hero-content"
-          style="
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          "
-        >
-            <h1
-              style="
-                font-size: 2.5rem;
-                font-weight: 700;
-                margin-bottom: 10px;
-                letter-spacing: 1px;
-              "
-            >
-              Stress & Anxiété
-            </h1>
-            <h2
-              style="
-                font-size: 1.3rem;
-                font-weight: 400;
-                margin-bottom: 22px;
-                max-width: 700px;
-                margin-left: auto;
-                margin-right: auto;
-              "
-            >
-              Retrouvez calme, sérénité et confiance grâce à l’hypnose thérapeutique.
-            </h2>
-            <a href="#pourquoi" class="cta-btn" style="margin-top: 10px"
-              >Pourquoi consulter&nbsp;?</a
-            >
-        </div>
-      </section>
-
-      <section class="section section-gray">
+      <!-- Hero Section -->
+      <section class="hero">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Vous souffrez de stress ou d’anxiété&nbsp;?</h2>
-              <ul style="max-width:600px;margin:0 auto 20px;line-height:1.8;">
-                <li>Vous ressentez une tension permanente ou des angoisses inexpliquées</li>
-                <li>Votre sommeil est perturbé par des ruminations ou des cauchemars</li>
-                <li>Vous avez du mal à lâcher prise ou à vous détendre</li>
-                <li>Vous évitez certaines situations par peur ou appréhension</li>
-                <li>Vous ressentez une perte de confiance ou d’estime de vous</li>
-                <li>Les solutions classiques n’ont pas fonctionné pour vous</li>
-              </ul>
-              <div class="text-center">
-                <a href="contact.html" class="cta-btn">Je veux en parler</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Les bienfaits de l’hypnose pour le stress et l’anxiété</h2>
-              <ul style="max-width:600px;margin:0 auto 20px;line-height:1.8;">
-                <li>Apaiser les tensions et retrouver un état de calme intérieur</li>
-                <li>Réduire les pensées envahissantes et les ruminations</li>
-                <li>Améliorer la qualité du sommeil</li>
-                <li>Renforcer la confiance en soi et l’estime personnelle</li>
-                <li>Développer des ressources pour mieux gérer les situations stressantes</li>
-                <li>Retrouver du plaisir et de la motivation au quotidien</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Comprendre et traiter le traumatisme</h2>
-              <p>
-                Le traumatisme a un impact sur deux aspects de votre
-                fonctionnement cérébral :
-                <strong>votre système conscient et inconscient.</strong>
+          <div class="hero-content">
+            <div class="hero-text animate-fade-in-left text-center">
+              <h1 class="hero-title">
+                Libérez-vous du
+                <span class="highlight">stress et de l'anxiété</span>
+              </h1>
+              <p class="hero-subtitle">
+                Retrouvez calme et sérénité grâce à l'hypnose. 
+                Des techniques douces et efficaces pour gérer le stress du quotidien 
+                et retrouver votre équilibre émotionnel.
               </p>
-              <p>
-                Consciemment, vous savez que le danger est passé et que vous
-                êtes en sécurité maintenant. Vous comprenez rationnellement que
-                l'événement traumatique appartient au passé. Cependant,
-                <strong
-                  >votre inconscient continue à réagir comme si la menace était
-                  toujours présente, déclenchant des réponses automatiques de
-                  stress, d'anxiété et de peur.</strong
-                >
-              </p>
-              <p>
-                Retrouvez votre équilibre émotionnel et votre sérénité en
-                libérant votre système nerveux des empreintes du traumatisme !
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Déroulement d’une séance d’hypnose</h2>
-              <p>
-                La séance dure 60 à 90 minutes (87&nbsp;€) en cabinet à Strasbourg ou à distance.
-              </p>
-              <p>
-                Des techniques personnalisées sont utilisées pour apaiser le stress, l’anxiété ou les traumatismes, dans un cadre sécurisant et bienveillant.
-              </p>
-              <p>
-                Un suivi sur-mesure est proposé pour consolider vos progrès et renforcer votre sérénité.
-              </p>
-              <a href="contact.html" class="cta-btn">Prendre rendez-vous</a>
-              <a
-                href="tel:0782835451"
-                class="cta-btn"
-                style="background: var(--secondary-color); color: #fff; margin-left: 10px;"
-              >
-                Appelez-moi
+              <a href="#solutions" class="btn btn-primary btn-lg">
+                Découvrir les solutions
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-gray">
+      <!-- Section Solutions -->
+      <section id="solutions" class="section bg-white">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Questions fréquentes</h2>
-              <h3>L’hypnose va-t-elle me faire perdre le contrôle&nbsp;?</h3>
-              <p>Non, vous restez maître de vous-même pendant toute la séance. L’hypnose thérapeutique est un état de conscience modifiée, mais vous entendez tout et pouvez interrompre la séance à tout moment.</p>
+          <div class="text-center mb-16">
+            <h2>L'hypnose pour retrouver la sérénité</h2>
+            <p class="section-subtitle">
+              Le stress et l'anxiété perturbent votre quotidien ? L'hypnose vous offre 
+              des outils concrets pour retrouver calme, confiance et bien-être durablement.
+            </p>
+          </div>
 
-              <h3>Dois-je revivre des souvenirs difficiles&nbsp;?</h3>
-              <p>Non, l’hypnose permet d’aborder les sources de stress ou d’anxiété sans revivre les émotions douloureuses. Les techniques utilisées sont douces et respectueuses de votre rythme.</p>
-
-              <h3>Combien de séances sont nécessaires&nbsp;?</h3>
-              <p>Chaque personne est unique, mais en général, 3 à 6 séances suffisent pour observer une nette amélioration du stress ou de l’anxiété. Un accompagnement personnalisé est proposé selon vos besoins.</p>
-
-              <h3>L’hypnose fonctionne-t-elle si je suis très anxieux(se)&nbsp;?</h3>
-              <p>Oui, l’hypnose est particulièrement adaptée aux personnes anxieuses ou stressées. Même si vous avez du mal à lâcher prise, l’accompagnement progressif permet d’atteindre un état de détente bénéfique.</p>
-
-              <h3>Est-ce compatible avec un suivi médical ou psychologique&nbsp;?</h3>
-              <p>Oui, l’hypnose peut compléter un suivi médical ou psychologique. N’hésitez pas à en parler à votre médecin ou thérapeute si besoin.</p>
+          <div class="grid grid-cols-auto gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🧘</div>
+              <h3 class="mb-4">Relaxation profonde</h3>
+              <p>
+                Apprenez à vous détendre rapidement et efficacement 
+                grâce aux techniques d'auto-hypnose.
+              </p>
             </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🛡️</div>
+              <h3 class="mb-4">Gestion émotionnelle</h3>
+              <p>
+                Développez votre capacité à gérer vos émotions 
+                et à réagir sereinement aux situations stressantes.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">💪</div>
+              <h3 class="mb-4">Confiance en soi</h3>
+              <p>
+                Renforcez votre estime personnelle et retrouvez 
+                confiance en vos capacités à surmonter les défis.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              Commencer mon accompagnement
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Symptômes -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Vous souffrez de stress ou d'anxiété si...</h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-8 mb-12">
+            <div class="card p-8">
+              <h3 class="mb-6">😰 Manifestations physiques</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Tensions musculaires, maux de tête</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Troubles du sommeil, fatigue chronique</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Palpitations, essoufflement</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Troubles digestifs, nausées</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card p-8">
+              <h3 class="mb-6">🧠 Manifestations psychiques</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Pensées négatives récurrentes</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Difficultés de concentration</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Irritabilité, sautes d'humeur</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Sentiment d'être dépassé(e)</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="tel:0782835451" class="btn btn-secondary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              Parlons de votre situation
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Comment ça marche -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Comment l'hypnose agit-elle sur le stress ?</h2>
+              <p>
+                L'hypnose permet d'accéder à vos ressources inconscientes pour 
+                modifier vos réactions automatiques face au stress et à l'anxiété.
+              </p>
+              <p>
+                Elle vous apprend à activer naturellement votre système nerveux 
+                parasympathique, responsable de la détente et de la récupération.
+              </p>
+              <p>
+                Vous repartez avec des outils concrets d'auto-hypnose que vous 
+                pouvez utiliser au quotidien pour maintenir votre équilibre.
+              </p>
+              <a href="contact.html" class="btn btn-primary">
+                Retrouver ma sérénité
+              </a>
+            </div>
+            <div class="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Personne sereine pratiquant la méditation"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Types d'accompagnement -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Types d'accompagnement proposés</h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-8 mb-12">
+            <div class="card p-8">
+              <h3 class="mb-6">🎯 Stress ponctuel</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Préparation à un examen, entretien</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Gestion d'un événement stressant</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Prise de parole en public</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Phobie spécifique</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card p-8">
+              <h3 class="mb-6">⚡ Stress chronique</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Surcharge de travail</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Troubles anxieux généralisés</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Burn-out, épuisement</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Anxiété sociale</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card p-8 text-center">
+            <h3 class="mb-6">Programme d'accompagnement personnalisé</h3>
+            <p class="mb-6">
+              Selon vos besoins, un accompagnement de 1 à 4 séances peut être proposé 
+              pour vous donner tous les outils nécessaires à votre bien-être.
+            </p>
+            <div class="grid grid-cols-3 gap-6 mb-8">
+              <div>
+                <div class="service-icon mb-3">⏰</div>
+                <p class="font-bold">Durée</p>
+                <p>60-90 min</p>
+              </div>
+              <div>
+                <div class="service-icon mb-3">💰</div>
+                <p class="font-bold">Tarif</p>
+                <p>87 € / séance</p>
+              </div>
+              <div>
+                <div class="service-icon mb-3">🎯</div>
+                <p class="font-bold">Suivi</p>
+                <p>Personnalisé</p>
+              </div>
+            </div>
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              Démarrer mon accompagnement
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Techniques -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Techniques et outils utilisés</h2>
+          </div>
+
+          <div class="grid grid-cols-auto gap-8">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🌊</div>
+              <h3 class="mb-4">Relaxation progressive</h3>
+              <p>Techniques de détente musculaire et mentale pour relâcher les tensions.</p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🎭</div>
+              <h3 class="mb-4">Recadrage cognitif</h3>
+              <p>Modification des pensées négatives et des schémas anxiogènes.</p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🔄</div>
+              <h3 class="mb-4">Auto-hypnose</h3>
+              <p>Apprentissage de techniques que vous pourrez utiliser en autonomie.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Questions fréquentes</h2>
+          </div>
+
+          <div class="max-w-4xl mx-auto space-y-6">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>L'hypnose peut-elle m'aider pour mon stress au travail ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Absolument. L'hypnose est très efficace pour apprendre à gérer 
+                  la pression professionnelle et développer de meilleures stratégies d'adaptation.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Combien de séances sont nécessaires ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Pour un stress ponctuel, 1 à 2 séances suffisent souvent. 
+                  Pour un stress chronique, 3 à 4 séances permettent un accompagnement complet.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Vais-je apprendre des techniques à utiliser chez moi ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Oui, je vous enseigne des techniques d'auto-hypnose et de relaxation 
+                  que vous pourrez pratiquer quotidiennement en autonomie.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>L'hypnose fonctionne-t-elle pour l'anxiété généralisée ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Oui, l'hypnose est particulièrement adaptée pour réduire l'anxiété 
+                  généralisée en agissant sur les mécanismes inconscients qui l'entretiennent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section bg-gradient">
+        <div class="container text-center">
+          <h2 class="text-white mb-6">
+            Prêt(e) à retrouver votre sérénité ?
+          </h2>
+          <p class="text-white text-xl mb-8 max-w-2xl mx-auto">
+            Ne laissez plus le stress et l'anxiété gâcher votre quotidien. 
+            Prenez rendez-vous et découvrez les bienfaits de l'hypnose.
+          </p>
+          <div class="flex gap-4 justify-center">
+            <a href="tel:+33782835451" class="btn btn-primary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              07 82 83 54 51
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              Formulaire de contact
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="container footer-flex">
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>
-            Esther Allier<br />Cabinet d’hypnose à Strasbourg<br />Email :
-            <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a
-            ><br />Tél : <a href="tel:+33612345678">06 12 34 56 78</a>
-          </p>
-        </div>
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="aProposDeMoi.html">À propos</a></li>
-            <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Adresse</h3>
-          <p>
-            Esther Allier – Hypnothérapeute<br />
-            10 Rue du Général de Castelnau<br />
-            Espace Castelnau<br />
-            67000 STRASBOURG
-          </p>
-          <h3>Suivez-moi</h3>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                alt="Instagram"
-            /></a>
-            <a href="#" aria-label="Facebook"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                alt="Facebook"
-            /></a>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>
+              <strong>Esther Allier</strong><br />
+              Hypnothérapeute certifiée
+            </p>
+            <p>
+              📧
+              <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a>
+            </p>
+            <p>📞 <a href="tel:+33782835451">07 82 83 54 51</a></p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="aProposDeMoi.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Adresse</h3>
+            <p>
+              <strong>Cabinet d'hypnose</strong><br />
+              10 Rue du Général de Castelnau<br />
+              Espace Castelnau<br />
+              67000 STRASBOURG
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Horaires</h3>
+            <p>
+              <strong>Lundi - Vendredi</strong><br />
+              9h00 - 19h00
+            </p>
+            <p>
+              <strong>Samedi</strong><br />
+              9h00 - 17h00
+            </p>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          &copy; 2025 Esther Allier. Tous droits réservés. |
-          <a href="#">Mentions légales</a>
-        </p>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Esther Allier. Tous droits réservés. |
+            <a href="#">Mentions légales</a>
+          </p>
+        </div>
       </div>
     </footer>
 
     <script>
-      // Menu burger responsive
-      const hamburger = document.getElementById("hamburger");
-      const nav = document.getElementById("main-nav");
-      hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        hamburger.classList.toggle("open");
+      // Menu mobile
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenuBtn.classList.toggle("active");
+        mainNav.classList.toggle("mobile-open");
       });
+
+      // Header scroll effect
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // FAQ Toggle
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const faqItem = question.parentElement;
+          const answer = faqItem.querySelector(".faq-answer");
+          const icon = question.querySelector("svg");
+
+          faqItem.classList.toggle("active");
+
+          if (faqItem.classList.contains("active")) {
+            answer.style.display = "block";
+            icon.style.transform = "rotate(180deg)";
+          } else {
+            answer.style.display = "none";
+            icon.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document
+        .querySelectorAll(
+          ".animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right"
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+          el.style.transition = "all 0.6s ease-out";
+          observer.observe(el);
+        });
     </script>
   </body>
 </html>

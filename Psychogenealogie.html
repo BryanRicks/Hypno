@@ -1,393 +1,725 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Psychogénéalogie et hypnose • Esther ALLIER</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Psychogénéalogie et Hypnose • Esther Allier</title>
     <meta
       name="description"
-      content="Séances de psychogénéalogie à Strasbourg ➜ Découvrez l'impact de votre histoire familiale : libérez-vous des schémas transgénérationnels, traumatismes et blocages hérités"
+      content="Psychogénéalogie à Strasbourg. Libérez-vous des schémas familiaux limitants grâce à l'hypnose. Découvrez l'impact de votre héritage transgénérationnel."
     />
+    <link rel="stylesheet" href="modern-styles.css" />
   </head>
 
   <body>
-    <header class="main-header">
-      <div class="container header-flex">
-        <a
-          href="index.html"
-          class="logo"
-          style="
-            font-family: 'Montserrat', Arial, sans-serif;
-            font-weight: 700;
-            font-size: 2rem;
-            color: #203066;
-            letter-spacing: 1px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-          "
-        >
-          <span
-            style="
-              display: inline-block;
-              background: linear-gradient(90deg, #203066 60%, #ec008c 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-            "
-            >Esther Allier</span
-          >
-          <span
-            style="
-              font-size: 1.1rem;
-              font-weight: 400;
-              color: #ec008c;
-              margin-left: 2px;
-            "
-            >Hypnose</span
-          >
-        </a>
-        <nav class="main-nav" id="main-nav">
-          <a href="index.html">Accueil</a>
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Hypnose</a>
-            <div class="dropdown-content">
-              <a href="traumatisme.html">Traumatisme</a>
-              <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
-              <a href="tabac.html">Arrêt du tabac</a>
-              <a href="troubleDuSommeil.html">Trouble du sommeil</a>
-              <a href="stressAnxiete.html">Stress et Anxiété</a>
+    <!-- Header moderne -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span class="highlight">Esther</span> Allier
+          </a>
+
+          <nav class="nav" id="mainNav">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <div class="dropdown">
+              <div class="dropdown-trigger nav-link">
+                Hypnose
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="dropdown-menu">
+                <a href="traumatisme.html" class="dropdown-item"
+                  >Traumatismes</a
+                >
+                <a href="troublesAlimentaire.html" class="dropdown-item"
+                  >Troubles Alimentaires</a
+                >
+                <a href="tabac.html" class="dropdown-item">Arrêt du Tabac</a>
+                <a href="troubleDuSommeil.html" class="dropdown-item"
+                  >Troubles du Sommeil</a
+                >
+                <a href="stressAnxiete.html" class="dropdown-item"
+                  >Stress & Anxiété</a
+                >
+              </div>
             </div>
-          </div>
-          <a href="Psychogenealogie.html">Psychogénéalogie</a>
-          <a href="contact.html">Contact</a>
-          <a href="aProposDeMoi.html">À propos</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
+            <a href="Psychogenealogie.html" class="nav-link active"
+              >Psychogénéalogie</a
+            >
+            <a href="aProposDeMoi.html" class="nav-link">À propos</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
 
     <main>
-      <section
-        class="hero about-hero"
-        style="
-          background-image: linear-gradient(
-              rgba(32, 48, 102, 0.7),
-              rgba(236, 0, 140, 0.3)
-            ),
-            url('https://images.pexels.com/photos/6146960/pexels-photo-6146960.jpeg');
-          background-size: cover;
-          background-position: center;
-          color: #fff;
-          padding: 70px 0 40px 0;
-        "
-      >
-        <div
-          class="container hero-content"
-          style="
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          "
-        >
-          <h1
-            style="
-              font-size: 2.5rem;
-              font-weight: 700;
-              margin-bottom: 10px;
-              letter-spacing: 1px;
-            "
-          >
-            Psychogénéalogie & Hypnose
-          </h1>
-          <h2
-            style="
-              font-size: 1.3rem;
-              font-weight: 400;
-              margin-bottom: 22px;
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          >
-            Libérez-vous des schémas familiaux inconscients et révélez votre
-            potentiel grâce à l’exploration de votre histoire familiale.
-          </h2>
-          <a href="#method" class="cta-btn" style="margin-top: 10px"
-            >Découvrir la méthode</a
-          >
-        </div>
-      </section>
-      <!-- Pourquoi explorer votre histoire familiale ? -->
-      <section class="section">
+      <!-- Hero Section -->
+      <section class="hero">
         <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Pourquoi explorer votre histoire familiale&nbsp;?</h2>
-              <p style="max-width: 700px; margin: 0 auto 20px">
-                Notre histoire familiale influence souvent nos choix, nos
-                émotions et nos blocages, parfois à notre insu. Comprendre ces
-                héritages invisibles, c’est se donner la possibilité de s’en
-                libérer et d’ouvrir de nouvelles perspectives pour soi et pour
-                les générations futures.
+          <div class="hero-content">
+            <div class="hero-text animate-fade-in-left text-center">
+              <h1 class="hero-title">
+                <span class="highlight">Psychogénéalogie</span><br />
+                et hypnose thérapeutique
+              </h1>
+              <p class="hero-subtitle">
+                Libérez-vous des schémas familiaux limitants et des héritages
+                transgénérationnels. Découvrez comment votre histoire familiale
+                influence votre vie actuelle.
               </p>
+              <a href="#decouvrir" class="btn btn-primary btn-lg">
+                Découvrir la méthode
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-gray">
+      <!-- Section Qu'est-ce que la psychogénéalogie -->
+      <section id="decouvrir" class="section bg-white">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 style="text-align: center">
-                La psychogénéalogie : Comprendre les héritages invisibles
-              </h2>
-              <p style="text-align: justify">
-                La psychogénéalogie est une approche thérapeutique qui explore
-                l'influence de votre histoire familiale sur votre vie actuelle.
-                Elle part du principe que certains schémas, comportements et
-                problématiques se répètent de génération en génération, créant
-                ce que l'on appelle des "loyautés invisibles".
-              </p>
-              <p style="text-align: justify">
-                Ces héritages transgénérationnels peuvent se manifester sous
-                forme de difficultés relationnelles, de blocages professionnels,
-                d'échecs répétitifs, de troubles émotionnels ou de maladies. En
-                prenant conscience de ces schémas, vous pouvez enfin vous en
-                libérer et reprendre le pouvoir sur votre vie.
-              </p>
-            </div>
+          <div class="text-center mb-16">
+            <h2>Qu'est-ce que la psychogénéalogie ?</h2>
+            <p class="section-subtitle">
+              La psychogénéalogie étudie l'influence de l'histoire familiale sur
+              notre vie. Elle révèle comment les secrets, traumatismes et
+              schémas de nos ancêtres peuvent se transmettre de génération en
+              génération.
+            </p>
           </div>
-        </div>
-      </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 style="text-align: center">
-                La psychogénéalogie peut vous aider si vous rencontrez :
-              </h2>
-              <div style="max-width: 700px; margin: 0 auto">
-                <ul>
-                  <li>
-                    Des schémas répétitifs dans votre vie (relations, travail,
-                    finances)
-                  </li>
-                  <li>Des blocages inexpliqués malgré vos efforts</li>
-                  <li>Des difficultés relationnelles récurrentes</li>
-                  <li>Des troubles émotionnels sans cause apparente</li>
-                  <li>
-                    Des maladies ou symptômes qui résistent aux traitements
-                  </li>
-                  <li>Des phobies ou peurs irrationnelles</li>
-                  <li>
-                    Un sentiment de porter un "fardeau" qui n'est pas le vôtre
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 style="text-align: center">
-                La méthode : Hypnose et psychogénéalogie
-              </h2>
+          <div class="grid grid-cols-auto gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🌳</div>
+              <h3 class="mb-4">Héritage familial</h3>
               <p>
-                L'hypnose ericksonienne est un outil particulièrement puissant
-                pour explorer les mémoires transgénérationnelles. Elle permet
-                d'accéder aux informations inconscientes et aux ressentis liés à
-                votre lignée familiale.
+                Découvrez les patterns familiaux qui se répètent et influencent
+                vos choix de vie inconsciemment.
               </p>
-              <p>
-                Au cours des séances, nous utiliserons différentes techniques :
-              </p>
-              <div style="max-width: 700px; margin: 0 auto">
-                <ul>
-                  <li>
-                    <strong>Construction du génosociogramme</strong> :
-                    représentation graphique de votre arbre généalogique
-                    incluant les événements marquants
-                  </li>
-                  <li>
-                    <strong>Exploration sous hypnose</strong> : accès aux
-                    mémoires familiales et aux émotions associées
-                  </li>
-                  <li>
-                    <strong>Protocoles de libération</strong> : techniques
-                    spécifiques pour se détacher des loyautés familiales
-                    limitantes
-                  </li>
-                  <li>
-                    <strong>Réparation symbolique</strong> : rituels pour
-                    apaiser les blessures du passé familial
-                  </li>
-                </ul>
-              </div>
             </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🔓</div>
+              <h3 class="mb-4">Libération</h3>
+              <p>
+                Identifiez et libérez-vous des loyautés familiales invisibles
+                qui limitent votre épanouissement.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">✨</div>
+              <h3 class="mb-4">Transformation</h3>
+              <p>
+                Transformez les blessures héritées en forces et retrouvez votre
+                liberté d'être vous-même.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              Commencer mon exploration
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <!-- Section Signes -->
+      <section class="section bg-gray-50">
         <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Déroulement d’un accompagnement</h2>
-              <p style="max-width: 700px; margin: 0 auto 20px">
-                Le travail en psychogénéalogie se déroule généralement sur 3 à 5
-                séances, selon votre histoire et vos besoins&nbsp;:
-              </p>
-              <ul
-                style="max-width: 600px; margin: 0 auto 20px; text-align: left"
-              >
-                <li>
-                  <strong>1<sup>ère</sup> séance (90 min)&nbsp;:</strong>
-                  Entretien initial et construction de votre génosociogramme
+          <div class="text-center mb-16">
+            <h2>Signes d'un héritage transgénérationnel</h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-8 mb-12">
+            <div class="card p-8">
+              <h3 class="mb-6">🔄 Schémas répétitifs</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span
+                    >Répétition des mêmes difficultés dans votre famille</span
+                  >
                 </li>
-                <li>
-                  <strong>2<sup>ème</sup> séance (60-90 min)&nbsp;:</strong>
-                  Exploration des liens transgénérationnels sous hypnose
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span
+                    >Dates anniversaires difficiles sans raison apparente</span
+                  >
                 </li>
-                <li>
-                  <strong>3<sup>ème</sup> séance (60-90 min)&nbsp;:</strong>
-                  Travail de libération des schémas identifiés
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Blocages à des âges précis</span>
                 </li>
-                <li>
-                  <strong>Séances suivantes&nbsp;:</strong> Approfondissement si
-                  nécessaire
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Répétition de certains prénoms ou métiers</span>
                 </li>
               </ul>
-              <p style="margin-bottom: 18px">
-                Tarif : 87&nbsp;€ la séance – forfait possible pour le parcours
-                complet
-              </p>
-              <a href="contact.html" class="cta-btn">Prendre rendez-vous</a>
-              <a
-                href="tel:0782835451"
-                class="cta-btn"
-                style="
-                  background: var(--secondary-color);
-                  color: #fff;
-                  margin-left: 10px;
-                "
-                >Appelez-moi</a
+            </div>
+
+            <div class="card p-8">
+              <h3 class="mb-6">🤐 Secrets et non-dits</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span
+                    >Sensation de porter un poids qui ne vous appartient
+                    pas</span
+                  >
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Zones d'ombre dans l'histoire familiale</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Sentiment de loyauté invisible envers la famille</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Difficultés inexpliquées dans certains domaines</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="tel:0782835451" class="btn btn-secondary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
               >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              Parlons de votre histoire
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Comment ça marche -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Comment l'hypnose aide-t-elle en psychogénéalogie ?</h2>
+              <p>
+                L'hypnose permet d'accéder aux mémoires inconscientes et aux
+                informations transmises à travers les générations. Elle aide à
+                identifier les liens entre votre histoire personnelle et celle
+                de vos ancêtres.
+              </p>
+              <p>
+                Grâce à l'état de conscience modifié, vous pouvez explorer votre
+                arbre généalogique de manière intuitive, révéler les secrets
+                familiaux et comprendre l'origine de certains blocages ou
+                patterns répétitifs.
+              </p>
+              <p>
+                Cette approche vous permet de vous libérer des loyautés
+                invisibles, de transformer les héritages négatifs et de
+                retrouver votre propre chemin de vie, libre des conditionnements
+                ancestraux.
+              </p>
+              <a href="contact.html" class="btn btn-primary">
+                Explorer mon héritage familial
+              </a>
+            </div>
+            <div class="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Arbre généalogique et transmission familiale"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-gray">
+      <!-- Section Domaines d'application -->
+      <section class="section bg-gray-50">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Questions fréquentes</h2>
-              <h3>
-                Faut-il connaître tout son arbre généalogique pour commencer ?
-              </h3>
-              <p>
-                Non, nous pouvons travailler avec les informations dont vous
-                disposez. Même partielles, ces informations sont précieuses.
-                L'hypnose permet également d'accéder à des ressentis et des
-                intuitions sur votre histoire familiale qui compléteront ce que
-                vous connaissez déjà.
-              </p>
+          <div class="text-center mb-16">
+            <h2>Domaines d'application</h2>
+          </div>
 
-              <h3>
-                Je suis adopté(e), la psychogénéalogie peut-elle m'aider ?
-              </h3>
-              <p>
-                Absolument. La psychogénéalogie considère à la fois l'héritage
-                biologique et l'héritage affectif. Nous pouvons travailler sur
-                votre famille adoptive et, si vous le souhaitez, explorer les
-                questions liées à vos origines biologiques.
-              </p>
+          <div class="grid grid-cols-2 gap-8 mb-12">
+            <div class="card p-8">
+              <h3 class="mb-6">💔 Relations et famille</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Difficultés relationnelles répétitives</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Problèmes de couple récurrents</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Difficultés avec la parentalité</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Conflits familiaux inexpliqués</span>
+                </li>
+              </ul>
+            </div>
 
-              <h3>Est-ce une approche scientifique ?</h3>
+            <div class="card p-8">
+              <h3 class="mb-6">💰 Vie professionnelle et financière</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Blocages financiers récurrents</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Difficultés à réussir professionnellement</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Peur du succès ou de l'échec</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Reproduction de patterns familiaux</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card p-8">
+            <h3 class="mb-6 text-center">🏥 Santé et bien-être</h3>
+            <div class="grid grid-cols-2 gap-6">
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Maladies récurrentes dans la famille</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Troubles psychosomatiques inexpliqués</span>
+                </li>
+              </ul>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Anxiété ou dépression familiale</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Addictions transmises</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Processus -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Le processus thérapeutique</h2>
+          </div>
+
+          <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🗺️</div>
+              <h3 class="mb-4">1. Cartographie familiale</h3>
               <p>
-                La psychogénéalogie s'appuie sur des observations cliniques et
-                des concepts psychologiques reconnus. Si elle n'est pas
-                considérée comme une science "dure", elle s'inspire néanmoins de
-                recherches en épigénétique qui montrent que certains
-                traumatismes peuvent influencer l'expression des gènes sur
-                plusieurs générations.
+                Exploration de votre arbre généalogique et identification des
+                patterns récurrents.
               </p>
             </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🔍</div>
+              <h3 class="mb-4">2. Révélation des liens</h3>
+              <p>
+                Mise en lumière des connexions entre votre histoire personnelle
+                et celle de vos ancêtres.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🦋</div>
+              <h3 class="mb-4">3. Transformation</h3>
+              <p>
+                Libération des loyautés invisibles et transformation des
+                héritages limitants.
+              </p>
+            </div>
+          </div>
+
+          <div class="card p-8 text-center">
+            <h3 class="mb-6">Informations pratiques</h3>
+            <div class="grid grid-cols-3 gap-6 mb-8">
+              <div>
+                <div class="service-icon mb-3">⏰</div>
+                <p class="font-bold">Durée</p>
+                <p>90 à 120 minutes</p>
+              </div>
+              <div>
+                <div class="service-icon mb-3">💰</div>
+                <p class="font-bold">Tarif</p>
+                <p>100 € / séance</p>
+              </div>
+              <div>
+                <div class="service-icon mb-3">🔢</div>
+                <p class="font-bold">Séances</p>
+                <p>3 à 6 selon les besoins</p>
+              </div>
+            </div>
+            <p class="mb-8">
+              Il peut être utile d'apporter des photos de famille, documents
+              généalogiques ou tout élément qui pourrait enrichir l'exploration
+              de votre histoire familiale.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              Commencer l'exploration
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Bénéfices -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Les bénéfices de la psychogénéalogie</h2>
+          </div>
+
+          <div class="grid grid-cols-auto gap-8">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🎯</div>
+              <h3 class="mb-4">Compréhension</h3>
+              <p>
+                Comprendre l'origine de vos difficultés et patterns de vie
+                répétitifs.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🔓</div>
+              <h3 class="mb-4">Libération</h3>
+              <p>
+                Se libérer des loyautés familiales invisibles et des héritages
+                limitants.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🌱</div>
+              <h3 class="mb-4">Évolution</h3>
+              <p>
+                Développer votre propre identité libre des conditionnements
+                ancestraux.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Questions fréquentes</h2>
+          </div>
+
+          <div class="max-w-4xl mx-auto space-y-6">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>
+                  Dois-je connaître mon histoire familiale pour commencer ?
+                </h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Non, ce n'est pas nécessaire. L'hypnose permet d'accéder à des
+                  informations inconscientes. Même avec peu d'éléments
+                  familiaux, nous pouvons explorer les patterns et influences
+                  transgénérationnelles.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>
+                  La psychogénéalogie peut-elle remplacer une thérapie classique
+                  ?
+                </h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Elle est complémentaire à d'autres approches thérapeutiques.
+                  Elle apporte un éclairage particulier sur l'origine
+                  transgénérationnelle de certaines difficultés, enrichissant
+                  ainsi le travail thérapeutique.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Combien de générations peut-on explorer ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Généralement, nous explorons sur 3 à 4 générations
+                  (grands-parents, arrière-grands-parents). Les influences les
+                  plus marquantes se situent souvent dans cette période proche.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>
+                  Est-ce que cela peut bouleverser ma vision de ma famille ?
+                </h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Le travail se fait toujours dans la bienveillance et le
+                  respect de votre famille. L'objectif n'est pas de juger mais
+                  de comprendre et de libérer ce qui peut l'être pour votre
+                  bien-être.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="section bg-gradient">
+        <div class="container text-center">
+          <h2 class="text-white mb-6">
+            Prêt(e) à explorer votre héritage familial ?
+          </h2>
+          <p class="text-white text-xl mb-8 max-w-2xl mx-auto">
+            Découvrez comment libérer votre plein potentiel en vous
+            affranchissant des patterns familiaux limitants. Votre propre chemin
+            de vie vous attend.
+          </p>
+          <div class="flex gap-4 justify-center">
+            <a href="tel:+33782835451" class="btn btn-primary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              07 82 83 54 51
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              Formulaire de contact
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="container footer-flex">
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>
-            Esther Allier<br />Cabinet d’hypnose à Strasbourg<br />Email :
-            <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a
-            ><br />Tél : <a href="tel:+33612345678">06 12 34 56 78</a>
-          </p>
-        </div>
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="aProposDeMoi.html">À propos</a></li>
-            <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Adresse</h3>
-          <p>
-            Esther Allier – Hypnothérapeute<br />
-            10 Rue du Général de Castelnau<br />
-            Espace Castelnau<br />
-            67000 STRASBOURG
-          </p>
-          <h3>Suivez-moi</h3>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                alt="Instagram"
-            /></a>
-            <a href="#" aria-label="Facebook"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                alt="Facebook"
-            /></a>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>
+              <strong>Esther Allier</strong><br />
+              Hypnothérapeute certifiée
+            </p>
+            <p>
+              📧
+              <a href="mailto:contact@estherallier.fr"
+                >contact@estherallier.fr</a
+              >
+            </p>
+            <p>📞 <a href="tel:+33782835451">07 82 83 54 51</a></p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="aProposDeMoi.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Adresse</h3>
+            <p>
+              <strong>Cabinet d'hypnose</strong><br />
+              10 Rue du Général de Castelnau<br />
+              Espace Castelnau<br />
+              67000 STRASBOURG
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Horaires</h3>
+            <p>
+              <strong>Lundi - Vendredi</strong><br />
+              9h00 - 19h00
+            </p>
+            <p>
+              <strong>Samedi</strong><br />
+              9h00 - 17h00
+            </p>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          &copy; 2025 Esther Allier. Tous droits réservés. |
-          <a href="#">Mentions légales</a>
-        </p>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Esther Allier. Tous droits réservés. |
+            <a href="#">Mentions légales</a>
+          </p>
+        </div>
       </div>
     </footer>
 
     <script>
-      // Menu burger responsive
-      const hamburger = document.getElementById("hamburger");
-      const nav = document.getElementById("main-nav");
-      hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        hamburger.classList.toggle("open");
+      // Menu mobile
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenuBtn.classList.toggle("active");
+        mainNav.classList.toggle("mobile-open");
       });
+
+      // Header scroll effect
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // FAQ Toggle
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const faqItem = question.parentElement;
+          const answer = faqItem.querySelector(".faq-answer");
+          const icon = question.querySelector("svg");
+
+          faqItem.classList.toggle("active");
+
+          if (faqItem.classList.contains("active")) {
+            answer.style.display = "block";
+            icon.style.transform = "rotate(180deg)";
+          } else {
+            answer.style.display = "none";
+            icon.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document
+        .querySelectorAll(
+          ".animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right"
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+          el.style.transition = "all 0.6s ease-out";
+          observer.observe(el);
+        });
     </script>
   </body>
 </html>

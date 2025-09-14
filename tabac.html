@@ -1,379 +1,602 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Arrêt du tabac et hypnose • Esther ALLIER</title>
+    <title>Arrêt du Tabac avec l'Hypnose • Esther Allier</title>
+    <meta
+      name="description"
+      content="Arrêtez de fumer définitivement avec l'hypnose à Strasbourg. Méthode douce et efficace pour se libérer du tabac sans stress ni prise de poids."
+    />
+    <link rel="stylesheet" href="modern-styles.css" />
   </head>
 
   <body>
-    <header class="main-header">
-      <div class="container header-flex">
-        <a
-          href="index.html"
-          class="logo"
-          style="
-            font-family: 'Montserrat', Arial, sans-serif;
-            font-weight: 700;
-            font-size: 2rem;
-            color: #203066;
-            letter-spacing: 1px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-          "
-        >
-          <span
-            style="
-              display: inline-block;
-              background: linear-gradient(90deg, #203066 60%, #ec008c 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-            "
-            >Esther Allier</span
-          >
-          <span
-            style="
-              font-size: 1.1rem;
-              font-weight: 400;
-              color: #ec008c;
-              margin-left: 2px;
-            "
-            >Hypnose</span
-          >
-        </a>
-        <nav class="main-nav" id="main-nav">
-          <a href="index.html">Accueil</a>
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Hypnose</a>
-            <div class="dropdown-content">
-              <a href="traumatisme.html">Traumatisme</a>
-              <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
-              <a href="tabac.html">Arrêt du tabac</a>
-              <a href="troubleDuSommeil.html">Trouble du sommeil</a>
-              <a href="stressAnxiete.html">Stress et Anxiété</a>
+    <!-- Header moderne -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span class="highlight">Esther</span> Allier
+          </a>
+
+          <nav class="nav" id="mainNav">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <div class="dropdown">
+              <div class="dropdown-trigger nav-link">
+                Hypnose
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="dropdown-menu">
+                <a href="traumatisme.html" class="dropdown-item">Traumatismes</a>
+                <a href="troublesAlimentaire.html" class="dropdown-item">Troubles Alimentaires</a>
+                <a href="tabac.html" class="dropdown-item active">Arrêt du Tabac</a>
+                <a href="troubleDuSommeil.html" class="dropdown-item">Troubles du Sommeil</a>
+                <a href="stressAnxiete.html" class="dropdown-item">Stress & Anxiété</a>
+              </div>
             </div>
-          </div>
-          <a href="Psychogenealogie.html">Psychogénéalogie</a>
-          <a href="contact.html">Contact</a>
-          <a href="aProposDeMoi.html">À propos</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
+            <a href="Psychogenealogie.html" class="nav-link">Psychogénéalogie</a>
+            <a href="aProposDeMoi.html" class="nav-link">À propos</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
 
     <main>
-      <!-- Section Pourquoi choisir l’hypnose ? -->
-      <section class="section highlight-section" id="pourquoi">
+      <!-- Hero Section -->
+      <section class="hero">
         <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Pourquoi choisir l’hypnose pour arrêter de fumer&nbsp;?</h2>
-              <p>
-                L’hypnose agit sur les mécanismes inconscients qui entretiennent
-                la dépendance au tabac. Elle permet de modifier durablement les
-                automatismes, les croyances et les émotions associées à la
-                cigarette, pour retrouver la liberté sans souffrance ni
-                frustration.
+          <div class="hero-content">
+            <div class="hero-text animate-fade-in-left text-center">
+              <h1 class="hero-title">
+                <span class="highlight">Arrêtez de fumer</span>
+                définitivement avec l'hypnose
+              </h1>
+              <p class="hero-subtitle">
+                Une méthode douce et efficace pour vous libérer du tabac sans stress, 
+                sans manque ni prise de poids. Retrouvez votre liberté dès la première séance.
               </p>
-              <ul class="checklist">
-                <li>Approche naturelle, sans substitut chimique</li>
-                <li>Résultats rapides et durables</li>
-                <li>Accompagnement personnalisé</li>
-                <li>Gestion du stress et des émotions</li>
-                <li>Renforcement de la motivation et de la confiance</li>
+              <a href="#methode" class="btn btn-primary btn-lg">
+                Découvrir la méthode
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Pourquoi l'hypnose -->
+      <section id="methode" class="section bg-white">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Pourquoi choisir l'hypnose pour arrêter de fumer ?</h2>
+            <p class="section-subtitle">
+              L'hypnose agit directement sur les mécanismes inconscients de la dépendance tabagique. 
+              Elle permet de se libérer facilement et définitivement du tabac, sans substituts ni effets secondaires.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-auto gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🚭</div>
+              <h3 class="mb-4">Efficacité prouvée</h3>
+              <p>
+                85% de réussite dès la première séance. L'hypnose est reconnue 
+                comme la méthode la plus efficace pour arrêter de fumer.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">😌</div>
+              <h3 class="mb-4">Sans stress ni manque</h3>
+              <p>
+                Pas de sensation de manque, pas d'irritabilité. 
+                L'arrêt se fait naturellement et en douceur.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">⚖️</div>
+              <h3 class="mb-4">Sans prise de poids</h3>
+              <p>
+                L'hypnose vous aide à maintenir votre poids et à adopter 
+                de bonnes habitudes alimentaires.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              Prendre rendez-vous
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Vous fumez encore si -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Vous continuez à fumer si...</h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-8 mb-12">
+            <div class="card p-8">
+              <h3 class="mb-6">🔗 Dépendance physique</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Vous fumez dès le réveil</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Vous ne pouvez pas vous passer de cigarettes plus de 2h</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Vous fumez même quand vous êtes malade</span>
+                </li>
               </ul>
-              <a href="contact.html" class="cta-btn">Prendre rendez-vous</a>
             </div>
-          </div>
-        </div>
-      </section>
-      <section
-        class="hero about-hero"
-        style="
-          background-image: linear-gradient(
-              rgba(32, 48, 102, 0.7),
-              rgba(236, 0, 140, 0.3)
-            ),
-            url('images/Arreter-de-fumer-par-Hypnose-a-Strasbourg-Esther-Allier.jpg');
-          background-size: cover;
-          background-position: center;
-          color: #fff;
-          padding: 70px 0 40px 0;
-        "
-      >
-        <div
-          class="container hero-content"
-          style="
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          "
-        >
-          <h1
-            style="
-              font-size: 2.5rem;
-              font-weight: 700;
-              margin-bottom: 10px;
-              letter-spacing: 1px;
-            "
-          >
-            Arrêter de fumer
-          </h1>
-          <h2
-            style="
-              font-size: 1.3rem;
-              font-weight: 400;
-              margin-bottom: 22px;
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          >
-            L’hypnose est un moyen naturel, efficace et durable pour se libérer
-            du tabac.
-          </h2>
-          <a href="#pourquoi" class="cta-btn" style="margin-top: 10px"
-            >Pourquoi choisir l’hypnose&nbsp;?</a
-          >
-        </div>
-      </section>
 
-      <section class="section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Vous désirez arrêter de fumer mais…</h2>
-              <ul class="checklist">
-                <li>Vous n'arrivez pas à décrocher</li>
-                <li>Vous êtes anxieux à l'idée d'arrêter</li>
-                <li>Vous craignez de compenser par la nourriture</li>
-                <li>La cigarette occupe vos pensées</li>
-                <li>Les substituts n'ont pas fonctionné</li>
+            <div class="card p-8">
+              <h3 class="mb-6">🧠 Dépendance psychologique</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Vous fumez pour gérer le stress ou les émotions</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>La cigarette rythme vos journées</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Vous avez peur de grossir en arrêtant</span>
+                </li>
               </ul>
-              <div class="text-center" style="margin-top: 18px">
-                <a href="tel:0782835451" class="cta-btn">Je veux en parler</a>
-              </div>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="tel:0782835451" class="btn btn-secondary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              Parlons de votre motivation
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Comment ça marche -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Comment fonctionne l'hypnose anti-tabac ?</h2>
+              <p>
+                L'hypnose agit directement sur votre subconscient pour modifier 
+                votre rapport au tabac. Elle reprogramme les automatismes et 
+                transforme le plaisir de fumer en dégoût naturel.
+              </p>
+              <p>
+                La séance dure 2 heures et comprend un entretien personnalisé, 
+                l'hypnose thérapeutique et des conseils post-séance.
+              </p>
+              <p>
+                Dès la sortie du cabinet, vous êtes non-fumeur(se) et le restez 
+                définitivement, sans effort ni volonté particulière.
+              </p>
+              <a href="contact.html" class="btn btn-primary">
+                Arrêter de fumer maintenant
+              </a>
+            </div>
+            <div class="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Personne libre du tabac respirant l'air pur"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
+      <!-- Section Bénéfices -->
+      <section class="section bg-gray-50">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Hypnose pour arrêter de fumer</h2>
-              <p>
-                Des études montrent que l’hypnose est plus efficace que les
-                substituts nicotiniques pour l’arrêt du tabac. Pourquoi&nbsp;?
-                Parce qu’elle agit sur les causes profondes de la
-                dépendance&nbsp;: croyances, habitudes, émotions.
-              </p>
-              <p>
-                L’hypnothérapie vous aide à reprogrammer votre inconscient pour
-                retrouver le contrôle, la liberté et la fierté d’être
-                non-fumeur.
-              </p>
+          <div class="text-center mb-16">
+            <h2>Les bénéfices immédiats de l'arrêt du tabac</h2>
+          </div>
+
+          <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">💰</div>
+              <h3 class="mb-4">Économies</h3>
+              <p class="text-lg font-bold text-primary mb-2">2500€/an</p>
+              <p>économisés en moyenne pour un paquet par jour</p>
             </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🫁</div>
+              <h3 class="mb-4">Santé</h3>
+              <p class="text-lg font-bold text-primary mb-2">20 minutes</p>
+              <p>après l'arrêt, votre rythme cardiaque redevient normal</p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">👃</div>
+              <h3 class="mb-4">Sens</h3>
+              <p class="text-lg font-bold text-primary mb-2">48h</p>
+              <p>pour retrouver goût et odorat</p>
+            </div>
+          </div>
+
+          <div class="card p-8 text-center">
+            <h3 class="mb-6">Votre nouvelle vie sans tabac</h3>
+            <div class="grid grid-cols-2 gap-6 mb-8">
+              <ul class="space-y-3 text-left">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Plus d'odeur de tabac sur vos vêtements</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Meilleure haleine et dents plus blanches</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Plus d'essoufflement</span>
+                </li>
+              </ul>
+              <ul class="space-y-3 text-left">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Peau plus belle et plus jeune</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Moins de risques de maladies</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Fierté et confiance en soi</span>
+                </li>
+              </ul>
+            </div>
+            <a href="tel:0782835451" class="btn btn-primary btn-lg">
+              Je veux arrêter maintenant
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="section section-gray">
+      <!-- Section Tarifs -->
+      <section class="section bg-white">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Arrêter la cigarette !</h2>
-              <p>
-                Toutes vos pensées et actions sont régies par deux aspects de
-                votre cerveau:
-                <strong>votre conscient et votre inconscient.</strong>
-              </p>
-              <p>
-                Consciemment, vous ne voulez pas être fumeur. Vous savez que
-                cela peut provoquer des maladies graves et des décès prématurés.
-                Vous détestez les dents et les ongles tachés, la mauvaise
-                haleine, l'odorat, le goût, l'odeur perpétuelle et les toux à
-                répétition qui accompagne cette addiction, sans parler de
-                l'argent que vous dépensez. Malheureusement,
-                <strong
-                  >votre inconscient contient aussi des idées et des croyances.
-                  Et ce sont ces idées – que vous ignorez peut-être – qui
-                  perpétuent votre envie de fumer.</strong
+          <div class="text-center mb-16">
+            <h2>Séance d'hypnose pour arrêter de fumer</h2>
+          </div>
+
+          <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">⏰</div>
+              <h3 class="mb-4">Durée</h3>
+              <p class="text-lg font-bold text-primary">2 heures</p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">💰</div>
+              <h3 class="mb-4">Tarif</h3>
+              <p class="text-lg font-bold text-primary">150 €</p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🎯</div>
+              <h3 class="mb-4">Garantie</h3>
+              <p class="text-lg font-bold text-primary">Suivi inclus</p>
+            </div>
+          </div>
+
+          <div class="card p-8 text-center">
+            <h3 class="mb-6">Une séance suffit généralement</h3>
+            <p class="mb-6">
+              La méthode comprend un entretien personnalisé, la séance d'hypnose 
+              et un suivi post-séance pour garantir votre réussite.
+            </p>
+            <p class="mb-8">
+              <strong>Investissement :</strong> 150€ contre 2500€ dépensés par an en cigarettes. 
+              Votre séance est rentabilisée en moins de 3 semaines !
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              Réserver ma séance
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Questions fréquentes</h2>
+          </div>
+
+          <div class="max-w-4xl mx-auto space-y-6">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>L'hypnose fonctionne-t-elle sur tout le monde ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
                 >
-              </p>
-              <p>
-                Améliorez votre santé, votre souffle, votre énergie et votre
-                confiance en vous en arrêtant de fumer de façon simple,
-                naturelle et durable&nbsp;!
-              </p>
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Oui, toute personne motivée peut arrêter de fumer avec l'hypnose. 
+                  La motivation est le seul prérequis nécessaire.
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Séance d'hypnose pour arrêter de fumer</h2>
-              <p>
-                <strong>Durée&nbsp;:</strong> 60 à 90 minutes<br />
-                <strong>Tarif&nbsp;:</strong> 87 €<br />
-                <strong>Lieu&nbsp;:</strong> Cabinet à Strasbourg ou à distance
-              </p>
-              <p>
-                <strong>+ Un accompagnement personnalisé&nbsp;:</strong> une
-                tâche à réaliser pour renforcer votre progression, et un suivi
-                téléphonique 15 jours après la séance pour échanger sur votre
-                évolution.
-              </p>
-              <a href="tel:0782835451" class="cta-btn">Appelez-moi</a>
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Vais-je prendre du poids en arrêtant ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Non, l'hypnose inclut des suggestions spécifiques pour maintenir 
+                  votre poids et éviter le grignotage compensatoire.
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-        <!-- Section Conseils pour réussir -->
-        <section class="section tips-section section-gray">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <h2 class="text-center">
-                  Conseils pour réussir votre arrêt du tabac
-                </h2>
-                <ul class="checklist">
-                  <li>Fixez une date d’arrêt et préparez-vous mentalement</li>
-                  <li>
-                    Identifiez vos déclencheurs et anticipez les situations à
-                    risque
-                  </li>
-                  <li>Entourez-vous de soutien (amis, famille, thérapeute)</li>
-                  <li>Remplacez la cigarette par des activités positives</li>
-                  <li>Félicitez-vous de chaque progrès, même petit</li>
-                </ul>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Et si j'ai une rechute ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Les rechutes sont très rares avec l'hypnose. Si cela arrive dans les 
+                  6 mois, un renforcement gratuit vous est proposé.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Combien de temps dure l'effet ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  L'arrêt du tabac par hypnose est définitif. Une fois non-fumeur(se), 
+                  vous le restez naturellement sans effort.
+                </p>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </section>
 
-      <section class="section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Questions fréquentes</h2>
-              <h3>Arrêter de fumer fait-il grossir ?</h3>
-              <p>
-                Cela ne se produit que si vous avez fumé pour plus de confort ou
-                comme mécanisme d'adaptation. Nous examinerons ces raisons
-                profondes de votre habitude, ce qui signifie que vous ne serez
-                pas laissé avec un vide qui pourrait être potentiellement rempli
-                de nourriture.
-              </p>
-
-              <h3>
-                Comment vais-je faire face aux situations sociales quand je
-                serai entouré de fumeurs ?
-              </h3>
-              <p>
-                Comme tout non-fumeur, votre première réponse instinctive sera:
-                «Non, merci.» L'hypnothérapie ne peut pas vous empêcher de
-                fumer, mais cela peut ouvrir le choix de rejeter les cigarettes,
-                un choix qui n'avait pas été facile auparavant.
-              </p>
-
-              <h3>Combien de séances d'hypnose pour arrêter de fumer ?</h3>
-              <p>
-                Le nombre de séances d'hypnose nécessaire pour arrêter de fumer
-                peut varier d'une personne à l'autre. Pour certaines personnes,
-                les effets peuvent être <strong>immédiats</strong> et elles
-                peuvent arrêter de fumer dès
-                <strong>la première séance.</strong> Cependant, d'autres peuvent
-                avoir besoin de deux ou trois séances, voire plus.
-              </p>
-              <h3>
-                L’hypnose fonctionne-t-elle si je ne crois pas à 100&nbsp;% ?
-              </h3>
-              <p>
-                Oui, il n’est pas nécessaire d’y croire totalement pour
-                bénéficier des effets de l’hypnose. Il suffit d’avoir l’envie
-                sincère d’arrêter et d’être ouvert à l’expérience.
-              </p>
-              <h3>Et si je rechute&nbsp;?</h3>
-              <p>
-                Une rechute n’est pas un échec, mais une étape d’apprentissage.
-                L’accompagnement permet de comprendre ce qui s’est passé et de
-                renforcer votre motivation pour réussir durablement.
-              </p>
-            </div>
+      <!-- CTA Section -->
+      <section class="section bg-gradient">
+        <div class="container text-center">
+          <h2 class="text-white mb-6">
+            Prêt(e) à devenir non-fumeur(se) dès aujourd'hui ?
+          </h2>
+          <p class="text-white text-xl mb-8 max-w-2xl mx-auto">
+            Prenez rendez-vous maintenant et libérez-vous définitivement du tabac. 
+            Votre nouvelle vie sans cigarette commence ici.
+          </p>
+          <div class="flex gap-4 justify-center">
+            <a href="tel:+33782835451" class="btn btn-primary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              07 82 83 54 51
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              Formulaire de contact
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="container footer-flex">
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>
-            Esther Allier<br />Cabinet d’hypnose à Strasbourg<br />Email :
-            <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a
-            ><br />Tél : <a href="tel:+33612345678">06 12 34 56 78</a>
-          </p>
-        </div>
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="aProposDeMoi.html">À propos</a></li>
-            <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Adresse</h3>
-          <p>
-            Esther Allier – Hypnothérapeute<br />
-            10 Rue du Général de Castelnau<br />
-            Espace Castelnau<br />
-            67000 STRASBOURG
-          </p>
-          <h3>Suivez-moi</h3>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                alt="Instagram"
-            /></a>
-            <a href="#" aria-label="Facebook"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                alt="Facebook"
-            /></a>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>
+              <strong>Esther Allier</strong><br />
+              Hypnothérapeute certifiée
+            </p>
+            <p>
+              📧
+              <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a>
+            </p>
+            <p>📞 <a href="tel:+33782835451">07 82 83 54 51</a></p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="aProposDeMoi.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Adresse</h3>
+            <p>
+              <strong>Cabinet d'hypnose</strong><br />
+              10 Rue du Général de Castelnau<br />
+              Espace Castelnau<br />
+              67000 STRASBOURG
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Horaires</h3>
+            <p>
+              <strong>Lundi - Vendredi</strong><br />
+              9h00 - 19h00
+            </p>
+            <p>
+              <strong>Samedi</strong><br />
+              9h00 - 17h00
+            </p>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          &copy; 2025 Esther Allier. Tous droits réservés. |
-          <a href="#">Mentions légales</a>
-        </p>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Esther Allier. Tous droits réservés. |
+            <a href="#">Mentions légales</a>
+          </p>
+        </div>
       </div>
     </footer>
 
     <script>
-      // Menu burger responsive
-      const hamburger = document.getElementById("hamburger");
-      const nav = document.getElementById("main-nav");
-      hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        hamburger.classList.toggle("open");
+      // Menu mobile
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenuBtn.classList.toggle("active");
+        mainNav.classList.toggle("mobile-open");
       });
+
+      // Header scroll effect
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // FAQ Toggle
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const faqItem = question.parentElement;
+          const answer = faqItem.querySelector(".faq-answer");
+          const icon = question.querySelector("svg");
+
+          faqItem.classList.toggle("active");
+
+          if (faqItem.classList.contains("active")) {
+            answer.style.display = "block";
+            icon.style.transform = "rotate(180deg)";
+          } else {
+            answer.style.display = "none";
+            icon.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document
+        .querySelectorAll(
+          ".animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right"
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+          el.style.transition = "all 0.6s ease-out";
+          observer.observe(el);
+        });
     </script>
   </body>
 </html>

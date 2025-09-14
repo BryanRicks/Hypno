@@ -1,237 +1,292 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Contact • Esther ALLIER • Hypnothérapeute à Strasbourg</title>
+    <title>Contact - Prendre Rendez-vous • Esther Allier</title>
+    <meta
+      name="description"
+      content="Contactez Esther Allier, hypnothérapeute à Strasbourg. Prenez rendez-vous par téléphone ou formulaire. Cabinet au centre de Strasbourg."
+    />
+    <link rel="stylesheet" href="modern-styles.css" />
   </head>
 
   <body>
-    <header class="main-header">
-      <div class="container header-flex">
-        <a
-          href="index.html"
-          class="logo"
-          style="
-            font-family: 'Montserrat', Arial, sans-serif;
-            font-weight: 700;
-            font-size: 2rem;
-            color: #203066;
-            letter-spacing: 1px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-          "
-        >
-          <span
-            style="
-              display: inline-block;
-              background: linear-gradient(90deg, #203066 60%, #ec008c 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-            "
-            >Esther Allier</span
-          >
-          <span
-            style="
-              font-size: 1.1rem;
-              font-weight: 400;
-              color: #ec008c;
-              margin-left: 2px;
-            "
-            >Hypnose</span
-          >
-        </a>
-        <nav class="main-nav" id="main-nav">
-          <a href="index.html">Accueil</a>
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Hypnose</a>
-            <div class="dropdown-content">
-              <a href="traumatisme.html">Traumatisme</a>
-              <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
-              <a href="tabac.html">Arrêt du tabac</a>
-              <a href="troubleDuSommeil.html">Trouble du sommeil</a>
-              <a href="stressAnxiete.html">Stress et Anxiété</a>
+    <!-- Header moderne -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span class="highlight">Esther</span> Allier
+          </a>
+
+          <nav class="nav" id="mainNav">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <div class="dropdown">
+              <div class="dropdown-trigger nav-link">
+                Hypnose
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="dropdown-menu">
+                <a href="traumatisme.html" class="dropdown-item"
+                  >Traumatismes</a
+                >
+                <a href="troublesAlimentaire.html" class="dropdown-item"
+                  >Troubles Alimentaires</a
+                >
+                <a href="tabac.html" class="dropdown-item">Arrêt du Tabac</a>
+                <a href="troubleDuSommeil.html" class="dropdown-item"
+                  >Troubles du Sommeil</a
+                >
+                <a href="stressAnxiete.html" class="dropdown-item"
+                  >Stress & Anxiété</a
+                >
+              </div>
             </div>
-          </div>
-          <a href="Psychogenealogie.html">Psychogénéalogie</a>
-          <a href="contact.html">Contact</a>
-          <a href="aProposDeMoi.html">À propos</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
+            <a href="Psychogenealogie.html" class="nav-link"
+              >Psychogénéalogie</a
+            >
+            <a href="aProposDeMoi.html" class="nav-link">À propos</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </nav>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
 
     <main>
-      <section
-        class="hero about-hero"
-        style="
-          background-image: linear-gradient(
-              rgba(32, 48, 102, 0.7),
-              rgba(236, 0, 140, 0.3)
-            ),
-            url('https://images.pexels.com/photos/821754/pexels-photo-821754.jpeg');
-          background-size: cover;
-          background-position: center;
-          color: #fff;
-          padding: 70px 0 40px 0;
-        "
-      >
-        <div
-          class="container hero-content"
-          style="
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          "
-        >
-          <h1
-            style="
-              font-size: 2.5rem;
-              font-weight: 700;
-              margin-bottom: 10px;
-              letter-spacing: 1px;
-            "
-          >
-            Contactez-moi
-          </h1>
-          <h2
-            style="
-              font-size: 1.3rem;
-              font-weight: 400;
-              margin-bottom: 22px;
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          >
-            Pour toute question ou prise de rendez-vous, n'hésitez pas à me
-            contacter par téléphone, email ou via le formulaire ci-dessous.
-          </h2>
-          <a href="#infos-contact" class="cta-btn" style="margin-top: 10px"
-            >Voir les infos de contact</a
-          >
-        </div>
-      </section>
-
-      <!-- Contact Information Section -->
-      <section class="section" id="infos-contact">
+      <!-- Hero Section -->
+      <section class="hero">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Informations de contact</h2>
-              <ul
-                class="checklist"
-                style="max-width: 600px; margin: 0 auto 24px auto"
-              >
-                <li>
-                  <strong>Adresse :</strong> 10 Rue du Général de Castelnau,
-                  67000 Strasbourg
-                </li>
-                <li>
-                  <strong>Téléphone :</strong>
-                  <a href="tel:0782835451">07 82 83 54 51</a>
-                </li>
-                <li>
-                  <strong>Email :</strong>
-                  <a href="mailto:contact@hypnose-strasbourg.fr"
-                    >contact@hypnose-strasbourg.fr</a
-                  >
-                </li>
-                <li>
-                  <strong>Horaires :</strong> Lundi-Vendredi 9h-20h, Samedi
-                  9h-13h
-                </li>
-              </ul>
-              <div class="text-center">
-                <a href="tel:0782835451" class="cta-btn">Appeler maintenant</a>
-                <a
-                  href="#contact-form"
-                  class="cta-btn"
-                  style="margin-left: 10px"
-                  >Écrire un message</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Map Section -->
-      <section class="section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Localisation du cabinet</h2>
-              <div class="map-container">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2639.6155987958493!2d7.7420829!3d48.600367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4796c854ef4f854d%3A0xec40967a35766e96!2s10%20Rue%20du%20G%C3%A9n%C3%A9ral%20de%20Castelnau%2C%2067000%20Strasbourg!5e0!3m2!1sfr!2sfr!4v1651791234567!5m2!1sfr!2sfr"
-                  width="100%"
-                  height="450"
-                  style="border: 0"
-                  allowfullscreen=""
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Form Section -->
-      <section class="section" id="contact-form">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Envoyez-moi un message</h2>
-              <p class="text-center">
-                Pour toute demande de renseignements ou prise de rendez-vous,
-                n'hésitez pas à me contacter en remplissant le formulaire
-                ci-dessous.
+          <div class="hero-content">
+            <div class="hero-text animate-fade-in-left text-center">
+              <h1 class="hero-title">
+                Prenez <span class="highlight">rendez-vous</span>
+                dès aujourd'hui
+              </h1>
+              <p class="hero-subtitle">
+                Prêt(e) à franchir le pas vers un mieux-être ? Contactez-moi
+                pour échanger sur vos besoins et programmer votre première
+                séance.
               </p>
-              <form class="contact-form" action="#" method="post">
-                <div class="form-group">
-                  <label for="name">Nom et prénom *</label>
-                  <input type="text" id="name" name="name" required />
+              <div class="flex gap-4 justify-center">
+                <a href="tel:+33782835451" class="btn btn-primary btn-lg">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                    />
+                  </svg>
+                  07 82 83 54 51
+                </a>
+                <a href="#formulaire" class="btn btn-secondary btn-lg">
+                  Formulaire de contact
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Informations de contact -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Mes coordonnées</h2>
+            <p class="section-subtitle">
+              Plusieurs moyens de me contacter pour prendre rendez-vous ou poser
+              vos questions en toute confidentialité.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-auto gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">📞</div>
+              <h3 class="mb-4">Téléphone</h3>
+              <p class="text-lg font-bold text-primary mb-2">
+                <a href="tel:+33782835451">07 82 83 54 51</a>
+              </p>
+              <p>Lundi au vendredi : 9h-19h<br />Samedi : 9h-17h</p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">📧</div>
+              <h3 class="mb-4">Email</h3>
+              <p class="text-lg font-bold text-primary mb-2">
+                <a href="mailto:contact@estherallier.fr"
+                  >contact@estherallier.fr</a
+                >
+              </p>
+              <p>Réponse sous 24h<br />en semaine</p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">📍</div>
+              <h3 class="mb-4">Cabinet</h3>
+              <p class="text-lg font-bold text-primary mb-2">
+                Strasbourg Centre
+              </p>
+              <p>10 Rue du Général de Castelnau<br />67000 STRASBOURG</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Formulaire de contact -->
+      <section id="formulaire" class="section bg-gray-50">
+        <div class="container">
+          <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+              <h2>Formulaire de contact</h2>
+              <p class="section-subtitle">
+                Décrivez-moi votre situation et vos attentes. Je vous
+                recontacterai rapidement pour échanger et programmer votre
+                rendez-vous.
+              </p>
+            </div>
+
+            <div class="card p-8">
+              <form class="space-y-6" action="#" method="POST">
+                <div class="grid grid-cols-2 gap-6">
+                  <div>
+                    <label for="prenom" class="block font-bold mb-2"
+                      >Prénom *</label
+                    >
+                    <input
+                      type="text"
+                      id="prenom"
+                      name="prenom"
+                      required
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none"
+                    />
+                  </div>
+                  <div>
+                    <label for="nom" class="block font-bold mb-2">Nom *</label>
+                    <input
+                      type="text"
+                      id="nom"
+                      name="nom"
+                      required
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none"
+                    />
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="email">Email *</label>
-                  <input type="email" id="email" name="email" required />
+
+                <div class="grid grid-cols-2 gap-6">
+                  <div>
+                    <label for="email" class="block font-bold mb-2"
+                      >Email *</label
+                    >
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none"
+                    />
+                  </div>
+                  <div>
+                    <label for="telephone" class="block font-bold mb-2"
+                      >Téléphone</label
+                    >
+                    <input
+                      type="tel"
+                      id="telephone"
+                      name="telephone"
+                      class="w-full p-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none"
+                    />
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="phone">Téléphone</label>
-                  <input type="tel" id="phone" name="phone" />
+
+                <div>
+                  <label for="motif" class="block font-bold mb-2"
+                    >Motif de consultation *</label
+                  >
+                  <select
+                    id="motif"
+                    name="motif"
+                    required
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none"
+                  >
+                    <option value="">Choisissez votre motif</option>
+                    <option value="arret-tabac">Arrêt du tabac</option>
+                    <option value="troubles-alimentaires">
+                      Troubles alimentaires
+                    </option>
+                    <option value="stress-anxiete">Stress et anxiété</option>
+                    <option value="troubles-sommeil">
+                      Troubles du sommeil
+                    </option>
+                    <option value="traumatisme">Traumatisme</option>
+                    <option value="psychogenealogie">Psychogénéalogie</option>
+                    <option value="autre">Autre</option>
+                  </select>
                 </div>
-                <div class="form-group">
-                  <label for="subject">Sujet *</label>
-                  <input type="text" id="subject" name="subject" required />
-                </div>
-                <div class="form-group">
-                  <label for="message">Message *</label>
+
+                <div>
+                  <label for="message" class="block font-bold mb-2"
+                    >Votre message *</label
+                  >
                   <textarea
                     id="message"
                     name="message"
                     rows="6"
                     required
+                    placeholder="Décrivez-moi votre situation, vos attentes et vos disponibilités..."
+                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-primary focus:outline-none resize-vertical"
                   ></textarea>
                 </div>
-                <div class="form-group">
-                  <label class="checkbox-container">
-                    <input type="checkbox" name="privacy" required />
-                    <span class="checkmark"></span>
-                    J'accepte que mes données soient utilisées pour me
-                    recontacter
+
+                <div class="flex items-start gap-3">
+                  <input
+                    type="checkbox"
+                    id="consent"
+                    name="consent"
+                    required
+                    class="mt-1"
+                  />
+                  <label for="consent" class="text-sm">
+                    J'accepte que mes données personnelles soient utilisées pour
+                    me recontacter dans le cadre de ma demande. Elles ne seront
+                    pas transmises à des tiers. *
                   </label>
                 </div>
+
                 <div class="text-center">
-                  <button type="submit" class="cta-btn">
-                    Envoyer le message
+                  <button type="submit" class="btn btn-primary btn-lg">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      class="mr-2"
+                    >
+                      <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                      <circle cx="12" cy="12" r="3" />
+                    </svg>
+                    Envoyer ma demande
                   </button>
                 </div>
               </form>
@@ -240,105 +295,395 @@
         </div>
       </section>
 
-      <!-- FAQs Section -->
-      <section class="section section-gray">
+      <!-- Section Localisation -->
+      <section class="section bg-white">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Questions fréquentes</h2>
-              <h3>Comment prendre rendez-vous&nbsp;?</h3>
-              <p>
-                Vous pouvez prendre rendez-vous par téléphone, email ou via le
-                formulaire de contact. Je vous répondrai rapidement pour fixer
-                un créneau selon vos disponibilités.
-              </p>
-              <h3>Les séances d’hypnose sont-elles remboursées&nbsp;?</h3>
-              <p>
-                Les séances d’hypnothérapie ne sont généralement pas remboursées
-                par la sécurité sociale. Certaines mutuelles proposent des
-                forfaits pour les médecines douces. Renseignez-vous auprès de
-                votre complémentaire santé.
-              </p>
-              <h3>Proposez-vous des consultations à distance&nbsp;?</h3>
-              <p>
-                Oui, les séances d’hypnose peuvent se faire en visioconférence
-                pour les personnes qui ne peuvent pas se déplacer. L’efficacité
-                est comparable à celle d’une séance en cabinet.
-              </p>
-              <h3>Combien de temps dure une séance&nbsp;?</h3>
-              <p>
-                Une séance dure généralement entre 60 et 90 minutes, selon vos
-                besoins et le motif de consultation.
-              </p>
-              <h3>Comment se préparer à une séance&nbsp;?</h3>
-              <p>
-                Prévoyez un endroit calme, une tenue confortable et quelques
-                minutes pour vous détendre avant la séance, surtout à distance.
-              </p>
+          <div class="text-center mb-16">
+            <h2>Localisation du cabinet</h2>
+            <p class="section-subtitle">
+              Mon cabinet se situe au cœur de Strasbourg, facilement accessible
+              en transports en commun et en voiture.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-12 items-center">
+            <div>
+              <div class="card p-8">
+                <h3 class="mb-6">📍 Adresse</h3>
+                <p class="mb-4">
+                  <strong>Cabinet d'hypnose Esther Allier</strong><br />
+                  10 Rue du Général de Castelnau<br />
+                  Espace Castelnau<br />
+                  67000 STRASBOURG
+                </p>
+
+                <h3 class="mb-4 mt-8">🚗 Accès</h3>
+                <ul class="space-y-2">
+                  <li><strong>Tram :</strong> Arrêt Université (Ligne A, D)</li>
+                  <li>
+                    <strong>Bus :</strong> Lignes 10, 30 (Arrêt Université)
+                  </li>
+                  <li><strong>Parking :</strong> Parking Kleber à proximité</li>
+                  <li><strong>Vélo :</strong> Stations Vélhop disponibles</li>
+                </ul>
+
+                <h3 class="mb-4 mt-8">⏰ Horaires d'ouverture</h3>
+                <ul class="space-y-2">
+                  <li><strong>Lundi - Vendredi :</strong> 9h00 - 19h00</li>
+                  <li><strong>Samedi :</strong> 9h00 - 17h00</li>
+                  <li><strong>Dimanche :</strong> Fermé</li>
+                </ul>
+              </div>
+            </div>
+
+            <div>
+              <div class="card p-4">
+                <div
+                  style="
+                    width: 100%;
+                    height: 400px;
+                    background: #f3f4f6;
+                    border-radius: 8px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: #6b7280;
+                  "
+                >
+                  <div class="text-center">
+                    <svg
+                      width="64"
+                      height="64"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      class="mx-auto mb-4"
+                    >
+                      <path
+                        d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                      />
+                      <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    <p class="font-bold">Carte interactive</p>
+                    <p class="text-sm">Retrouvez-moi au centre de Strasbourg</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section FAQ Contact -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Questions pratiques</h2>
+          </div>
+
+          <div class="max-w-4xl mx-auto space-y-6">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Comment prendre rendez-vous ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Le plus simple est de m'appeler au 07 82 83 54 51. Vous pouvez
+                  aussi m'écrire via le formulaire ou par email. Je vous
+                  rappelle rapidement pour convenir d'un créneau.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Quels sont les délais pour un rendez-vous ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Généralement sous 7 à 10 jours selon la période. En cas
+                  d'urgence, n'hésitez pas à me le préciser, je fais mon
+                  possible pour vous recevoir rapidement.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Proposez-vous des consultations à distance ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Oui, je propose des séances d'hypnose en visioconférence pour
+                  les personnes qui ne peuvent pas se déplacer ou qui habitent
+                  loin de Strasbourg.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Quels sont vos tarifs ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Les tarifs varient selon le type de séance : 87€ pour une
+                  séance classique (60-90 min), 150€ pour l'arrêt du tabac (2h).
+                  Paiement par chèque, espèces ou virement.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Comment annuler ou reporter un rendez-vous ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Merci de me prévenir au moins 24h à l'avance par téléphone ou
+                  SMS pour annuler ou reporter votre rendez-vous. Cela me permet
+                  de proposer le créneau à d'autres personnes en attente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Urgence -->
+      <section class="section bg-primary text-white">
+        <div class="container text-center">
+          <h2 class="text-white mb-6">Besoin d'une aide immédiate ?</h2>
+          <p class="text-xl mb-8 max-w-2xl mx-auto">
+            Si vous traversez une crise ou ressentez des pensées suicidaires,
+            n'hésitez pas à contacter les services d'urgence.
+          </p>
+          <div class="grid grid-cols-auto gap-6">
+            <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+              <h3 class="text-white mb-2">SOS Amitié</h3>
+              <p class="text-white font-bold">09 72 39 40 50</p>
+              <p class="text-white text-sm">24h/24 - 7j/7</p>
+            </div>
+            <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+              <h3 class="text-white mb-2">Suicide Écoute</h3>
+              <p class="text-white font-bold">01 45 39 40 00</p>
+              <p class="text-white text-sm">24h/24 - 7j/7</p>
+            </div>
+            <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+              <h3 class="text-white mb-2">SAMU</h3>
+              <p class="text-white font-bold">15</p>
+              <p class="text-white text-sm">Urgences médicales</p>
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="container footer-flex">
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>
-            Esther Allier<br />Cabinet d’hypnose à Strasbourg<br />Email :
-            <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a
-            ><br />Tél : <a href="tel:+33612345678">06 12 34 56 78</a>
-          </p>
-        </div>
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="aProposDeMoi.html">À propos</a></li>
-            <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Adresse</h3>
-          <p>
-            Esther Allier – Hypnothérapeute<br />
-            10 Rue du Général de Castelnau<br />
-            Espace Castelnau<br />
-            67000 STRASBOURG
-          </p>
-          <h3>Suivez-moi</h3>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                alt="Instagram"
-            /></a>
-            <a href="#" aria-label="Facebook"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                alt="Facebook"
-            /></a>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>
+              <strong>Esther Allier</strong><br />
+              Hypnothérapeute certifiée
+            </p>
+            <p>
+              📧
+              <a href="mailto:contact@estherallier.fr"
+                >contact@estherallier.fr</a
+              >
+            </p>
+            <p>📞 <a href="tel:+33782835451">07 82 83 54 51</a></p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="aProposDeMoi.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Adresse</h3>
+            <p>
+              <strong>Cabinet d'hypnose</strong><br />
+              10 Rue du Général de Castelnau<br />
+              Espace Castelnau<br />
+              67000 STRASBOURG
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Horaires</h3>
+            <p>
+              <strong>Lundi - Vendredi</strong><br />
+              9h00 - 19h00
+            </p>
+            <p>
+              <strong>Samedi</strong><br />
+              9h00 - 17h00
+            </p>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          &copy; 2025 Esther Allier. Tous droits réservés. |
-          <a href="#">Mentions légales</a>
-        </p>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Esther Allier. Tous droits réservés. |
+            <a href="#">Mentions légales</a>
+          </p>
+        </div>
       </div>
     </footer>
 
     <script>
-      // Menu burger responsive
-      const hamburger = document.getElementById("hamburger");
-      const nav = document.getElementById("main-nav");
-      hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        hamburger.classList.toggle("open");
+      // Menu mobile
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenuBtn.classList.toggle("active");
+        mainNav.classList.toggle("mobile-open");
       });
+
+      // Header scroll effect
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // FAQ Toggle
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const faqItem = question.parentElement;
+          const answer = faqItem.querySelector(".faq-answer");
+          const icon = question.querySelector("svg");
+
+          faqItem.classList.toggle("active");
+
+          if (faqItem.classList.contains("active")) {
+            answer.style.display = "block";
+            icon.style.transform = "rotate(180deg)";
+          } else {
+            answer.style.display = "none";
+            icon.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+
+      // Form validation
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Simple form validation
+        const requiredFields = this.querySelectorAll("[required]");
+        let isValid = true;
+
+        requiredFields.forEach((field) => {
+          if (!field.value.trim()) {
+            isValid = false;
+            field.style.borderColor = "#ef4444";
+          } else {
+            field.style.borderColor = "";
+          }
+        });
+
+        if (isValid) {
+          // Here you would normally submit the form
+          alert(
+            "Votre message a été envoyé ! Je vous recontacterai rapidement."
+          );
+          this.reset();
+        } else {
+          alert("Veuillez remplir tous les champs obligatoires.");
+        }
+      });
+
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document
+        .querySelectorAll(
+          ".animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right"
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+          el.style.transition = "all 0.6s ease-out";
+          observer.observe(el);
+        });
     </script>
   </body>
 </html>

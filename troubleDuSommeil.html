@@ -1,358 +1,685 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Trouble du sommeil et hypnose • Esther ALLIER</title>
+    <title>Troubles du Sommeil et Hypnose • Esther Allier</title>
+    <meta
+      name="description"
+      content="Hypnose pour retrouver un sommeil réparateur à Strasbourg. Solutions naturelles contre l'insomnie et les troubles du sommeil."
+    />
+    <link rel="stylesheet" href="modern-styles.css" />
   </head>
 
   <body>
-    <header class="main-header">
-      <div class="container header-flex">
-        <a
-          href="index.html"
-          class="logo"
-          style="
-            font-family: 'Montserrat', Arial, sans-serif;
-            font-weight: 700;
-            font-size: 2rem;
-            color: #203066;
-            letter-spacing: 1px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-          "
-        >
-          <span
-            style="
-              display: inline-block;
-              background: linear-gradient(90deg, #203066 60%, #ec008c 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-            "
-            >Esther Allier</span
-          >
-          <span
-            style="
-              font-size: 1.1rem;
-              font-weight: 400;
-              color: #ec008c;
-              margin-left: 2px;
-            "
-            >Hypnose</span
-          >
-        </a>
-        <nav class="main-nav" id="main-nav">
-          <a href="index.html">Accueil</a>
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Hypnose</a>
-            <div class="dropdown-content">
-              <a href="traumatisme.html">Traumatisme</a>
-              <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
-              <a href="tabac.html">Arrêt du tabac</a>
-              <a href="troubleDuSommeil.html">Trouble du sommeil</a>
-              <a href="stressAnxiete.html">Stress et Anxiété</a>
+    <!-- Header moderne -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span class="highlight">Esther</span> Allier
+          </a>
+
+          <nav class="nav" id="mainNav">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <div class="dropdown">
+              <div class="dropdown-trigger nav-link">
+                Hypnose
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="dropdown-menu">
+                <a href="traumatisme.html" class="dropdown-item"
+                  >Traumatismes</a
+                >
+                <a href="troublesAlimentaire.html" class="dropdown-item"
+                  >Troubles Alimentaires</a
+                >
+                <a href="tabac.html" class="dropdown-item">Arrêt du Tabac</a>
+                <a href="troubleDuSommeil.html" class="dropdown-item active"
+                  >Troubles du Sommeil</a
+                >
+                <a href="stressAnxiete.html" class="dropdown-item"
+                  >Stress & Anxiété</a
+                >
+              </div>
             </div>
-          </div>
-          <a href="Psychogenealogie.html">Psychogénéalogie</a>
-          <a href="contact.html">Contact</a>
-          <a href="aProposDeMoi.html">À propos</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
+            <a href="Psychogenealogie.html" class="nav-link"
+              >Psychogénéalogie</a
+            >
+            <a href="aProposDeMoi.html" class="nav-link">À propos</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
 
     <main>
-      <section
-        class="hero about-hero"
-        style="
-          background-image: linear-gradient(
-              rgba(32, 48, 102, 0.7),
-              rgba(236, 0, 140, 0.3)
-            ),
-            url('https://images.pexels.com/photos/935743/pexels-photo-935743.jpeg');
-          background-size: cover;
-          background-position: center;
-          color: #fff;
-          padding: 70px 0 40px 0;
-        "
-      >
-        <div
-          class="container hero-content"
-          style="
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          "
-        >
-          <h1
-            style="
-              font-size: 2.5rem;
-              font-weight: 700;
-              margin-bottom: 10px;
-              letter-spacing: 1px;
-            "
-          >
-            Retrouver un sommeil réparateur
-          </h1>
-          <h2
-            style="
-              font-size: 1.3rem;
-              font-weight: 400;
-              margin-bottom: 22px;
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          >
-            L’hypnose est une méthode naturelle et efficace pour vaincre
-            l’insomnie, les réveils nocturnes et retrouver un sommeil profond.
-          </h2>
-          <a href="#pourquoi" class="cta-btn" style="margin-top: 10px"
-            >Pourquoi choisir l’hypnose&nbsp;?</a
-          >
-        </div>
-      </section>
-      <!-- Section Pourquoi choisir l’hypnose ? -->
-      <section class="section highlight-section" id="pourquoi">
+      <!-- Hero Section -->
+      <section class="hero">
         <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Pourquoi choisir l’hypnose pour le sommeil&nbsp;?</h2>
-              <p>
-                L’hypnose agit sur les causes inconscientes des troubles du
-                sommeil&nbsp;: stress, ruminations, conditionnements, anxiété.
-                Elle permet de réapprendre à s’endormir naturellement et à
-                retrouver un sommeil réparateur.
+          <div class="hero-content">
+            <div class="hero-text animate-fade-in-left text-center">
+              <h1 class="hero-title">
+                Retrouvez un
+                <span class="highlight">sommeil réparateur</span>
+                avec l'hypnose
+              </h1>
+              <p class="hero-subtitle">
+                L'hypnose vous aide à vaincre l'insomnie et les troubles du
+                sommeil naturellement. Redécouvrez le plaisir de bien dormir et
+                de vous réveiller reposé(e).
               </p>
-              <ul class="checklist">
-                <li>Approche naturelle, sans médicament</li>
-                <li>Réduction du stress et des pensées envahissantes</li>
-                <li>Amélioration de la qualité et de la durée du sommeil</li>
-                <li>Accompagnement personnalisé</li>
-                <li>Retrouver l’énergie et la vitalité</li>
-              </ul>
-              <a href="contact.html" class="cta-btn">Prendre rendez-vous</a>
+              <a href="#solutions" class="btn btn-primary btn-lg">
+                Découvrir les solutions
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-gray">
+      <!-- Section Solutions -->
+      <section id="solutions" class="section bg-white">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">
-                Vous souffrez de troubles du sommeil si…
-              </h2>
-              <ul class="checklist">
-                <li>Vous avez du mal à vous endormir</li>
-                <li>Vous vous réveillez plusieurs fois par nuit</li>
-                <li>Vous avez des cauchemars ou des angoisses nocturnes</li>
-                <li>Vous vous sentez fatigué(e) au réveil</li>
-                <li>Les solutions classiques n’ont pas fonctionné</li>
+          <div class="text-center mb-16">
+            <h2>L'hypnose pour un sommeil de qualité</h2>
+            <p class="section-subtitle">
+              Les troubles du sommeil affectent votre santé et votre qualité de
+              vie. L'hypnose offre une solution naturelle et durable pour
+              retrouver un cycle de sommeil harmonieux sans dépendance aux
+              somnifères.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-auto gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🌙</div>
+              <h3 class="mb-4">Endormissement facile</h3>
+              <p>
+                Apprenez à vous détendre rapidement et à glisser naturellement
+                vers le sommeil.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">😴</div>
+              <h3 class="mb-4">Sommeil profond</h3>
+              <p>
+                Retrouvez un sommeil réparateur et profond pour une récupération
+                optimale.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">☀️</div>
+              <h3 class="mb-4">Réveil énergique</h3>
+              <p>
+                Réveillez-vous naturellement, reposé(e) et plein(e) d'énergie
+                pour la journée.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              Retrouver mon sommeil
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Types de troubles -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Troubles du sommeil traités par l'hypnose</h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-8 mb-12">
+            <div class="card p-8">
+              <h3 class="mb-6">😵‍💫 Difficultés d'endormissement</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Ruminations au coucher</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Anxiété du soir</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Hyperactivité mentale</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Peur de ne pas dormir</span>
+                </li>
               </ul>
-              <div class="text-center" style="margin-top: 18px">
-                <a href="tel:0782835451" class="cta-btn">Je veux en parler</a>
+            </div>
+
+            <div class="card p-8">
+              <h3 class="mb-6">🌗 Réveils nocturnes</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Réveils fréquents dans la nuit</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Difficultés à se rendormir</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Réveil précoce (4h-5h du matin)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Sommeil fragmenté</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card p-8">
+            <h3 class="mb-6 text-center">😴 Qualité du sommeil</h3>
+            <div class="grid grid-cols-2 gap-6">
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Sommeil léger, non réparateur</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Cauchemars récurrents</span>
+                </li>
+              </ul>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Fatigue au réveil</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Somnolence diurne</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center mt-8">
+            <a href="tel:0782835451" class="btn btn-secondary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              Parlons de vos nuits
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Comment ça marche -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Comment l'hypnose améliore-t-elle le sommeil ?</h2>
+              <p>
+                L'hypnose agit sur les mécanismes neurologiques du sommeil en
+                réduisant l'activation du système nerveux sympathique
+                responsable de l'éveil et de l'anxiété.
+              </p>
+              <p>
+                Elle vous apprend à activer naturellement votre système
+                parasympathique, celui de la détente et de la récupération,
+                favorisant un endormissement facile et un sommeil profond.
+              </p>
+              <p>
+                Vous repartez avec des techniques d'auto-hypnose spécifiques
+                pour créer votre rituel de coucher personnalisé et retrouver un
+                sommeil de qualité durablement.
+              </p>
+              <a href="contact.html" class="btn btn-primary">
+                Commencer mes nuits sereines
+              </a>
+            </div>
+            <div class="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Personne dormant paisiblement"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Bénéfices -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Les bénéfices d'un bon sommeil</h2>
+          </div>
+
+          <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🧠</div>
+              <h3 class="mb-4">Concentration</h3>
+              <p>
+                Amélioration de la mémoire, de la concentration et des
+                performances cognitives.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">💪</div>
+              <h3 class="mb-4">Énergie</h3>
+              <p>
+                Plus d'énergie physique et mentale pour profiter pleinement de
+                vos journées.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">😊</div>
+              <h3 class="mb-4">Humeur</h3>
+              <p>
+                Meilleure régulation émotionnelle et diminution de
+                l'irritabilité.
+              </p>
+            </div>
+          </div>
+
+          <div class="card p-8">
+            <h3 class="mb-6 text-center">Impact sur votre santé globale</h3>
+            <div class="grid grid-cols-2 gap-6 mb-8">
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Renforcement du système immunitaire</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Régulation du poids corporel</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Réduction du stress et de l'anxiété</span>
+                </li>
+              </ul>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Prévention des maladies cardiovasculaires</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Régénération cellulaire optimale</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Équilibre hormonal</span>
+                </li>
+              </ul>
+            </div>
+            <div class="text-center">
+              <a href="contact.html" class="btn btn-primary btn-lg">
+                Retrouver ma vitalité
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Accompagnement -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Programme d'accompagnement personnalisé</h2>
+          </div>
+
+          <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">⏰</div>
+              <h3 class="mb-4">Durée</h3>
+              <p class="text-lg font-bold text-primary mb-2">60-90 minutes</p>
+              <p>Séance adaptée à vos besoins</p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">💰</div>
+              <h3 class="mb-4">Tarif</h3>
+              <p class="text-lg font-bold text-primary mb-2">87 €</p>
+              <p>Par séance</p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🔢</div>
+              <h3 class="mb-4">Séances</h3>
+              <p class="text-lg font-bold text-primary mb-2">2 à 4</p>
+              <p>Selon les troubles</p>
+            </div>
+          </div>
+
+          <div class="card p-8">
+            <h3 class="mb-6 text-center">Méthodes et techniques utilisées</h3>
+            <div class="grid grid-cols-auto gap-6 mb-8">
+              <div class="text-center">
+                <div class="service-icon mb-3">🌊</div>
+                <h4 class="font-bold mb-2">Relaxation progressive</h4>
+                <p>Détente musculaire et mentale profonde</p>
+              </div>
+              <div class="text-center">
+                <div class="service-icon mb-3">🎵</div>
+                <h4 class="font-bold mb-2">Suggestions hypnotiques</h4>
+                <p>Programmation d'un sommeil naturel</p>
+              </div>
+              <div class="text-center">
+                <div class="service-icon mb-3">🔄</div>
+                <h4 class="font-bold mb-2">Auto-hypnose</h4>
+                <p>Techniques à pratiquer chez vous</p>
+              </div>
+            </div>
+            <p class="text-center mb-8">
+              Un enregistrement personnalisé vous sera remis pour faciliter
+              votre pratique à domicile et maintenir les bénéfices.
+            </p>
+            <div class="text-center">
+              <a href="tel:0782835451" class="btn btn-primary btn-lg">
+                Commencer mon accompagnement
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Questions fréquentes</h2>
+          </div>
+
+          <div class="max-w-4xl mx-auto space-y-6">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>L'hypnose peut-elle remplacer les somnifères ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Oui, l'hypnose offre une alternative naturelle aux somnifères,
+                  sans accoutumance ni effets secondaires. Consultez votre
+                  médecin pour un sevrage progressif si nécessaire.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Combien de temps faut-il pour voir des résultats ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Les premiers bénéfices sont souvent ressentis dès la première
+                  séance. Une amélioration durable s'observe généralement après
+                  2 à 3 séances.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>L'hypnose fonctionne-t-elle pour l'insomnie chronique ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Oui, l'hypnose est particulièrement efficace pour l'insomnie
+                  chronique en agissant sur les causes profondes et en
+                  reprogrammant les habitudes de sommeil.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Puis-je pratiquer l'auto-hypnose pour dormir ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Absolument ! Je vous enseigne des techniques d'auto-hypnose
+                  spécialement conçues pour l'endormissement que vous pourrez
+                  utiliser chaque soir.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Hypnose pour retrouver le sommeil</h2>
-              <p>
-                Des études montrent que l’hypnose est efficace pour améliorer la
-                qualité du sommeil, réduire le temps d’endormissement et
-                diminuer les réveils nocturnes.
-              </p>
-              <p>
-                L’hypnothérapie agit sur les schémas inconscients qui perturbent
-                le sommeil et vous aide à retrouver des nuits paisibles, sans
-                médicament.
-              </p>
-              <p>
-                Elle vous accompagne pour réapprendre à vous détendre, à lâcher
-                prise et à installer de nouveaux rituels favorables à
-                l’endormissement.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Comprendre le sommeil</h2>
-              <p>
-                Le sommeil est un besoin fondamental pour la santé physique et
-                mentale. Il est influencé par le stress, les habitudes,
-                l’alimentation, l’environnement et les pensées.
-              </p>
-              <p>
-                L’hypnose permet de rééquilibrer les cycles du sommeil,
-                d’apaiser le mental et de retrouver un rythme naturel.
-              </p>
-              <p>
-                Retrouver un sommeil réparateur, c’est retrouver de l’énergie,
-                de la concentration et du bien-être au quotidien&nbsp;!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Séance d'hypnose pour le sommeil</h2>
-              <p>
-                <strong>Durée&nbsp;:</strong> 60 à 90 minutes<br />
-                <strong>Tarif&nbsp;:</strong> 87 €<br />
-                <strong>Lieu&nbsp;:</strong> Cabinet à Strasbourg ou à distance
-              </p>
-              <p>
-                Des techniques spécifiques de relaxation, de visualisation et de
-                suggestion sont utilisées pour réinstaller un sommeil profond et
-                réparateur.
-              </p>
-              <p>
-                Un suivi personnalisé est proposé pour consolider les progrès et
-                retrouver durablement le plaisir de dormir.
-              </p>
-              <a href="tel:0782835451" class="cta-btn">Appelez-moi</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section Conseils sommeil -->
-      <section class="section tips-section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Conseils pour mieux dormir</h2>
-              <ul class="checklist">
-                <li>Adoptez des horaires réguliers de coucher et de lever</li>
-                <li>Évitez les écrans avant de dormir</li>
-                <li>Créez un rituel d’endormissement apaisant</li>
-                <li>Pratiquez la relaxation ou la respiration profonde</li>
-                <li>Consultez si les troubles persistent</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Questions fréquentes</h2>
-              <h3>
-                L’hypnose peut-elle m’aider si je souffre d’insomnie
-                chronique&nbsp;?
-              </h3>
-              <p>
-                Oui, l’hypnose est particulièrement efficace pour les troubles
-                du sommeil persistants, en complément d’un suivi médical si
-                besoin.
-              </p>
-              <h3>Combien de séances sont nécessaires&nbsp;?</h3>
-              <p>
-                Cela dépend de chaque personne, mais souvent 2 à 4 séances
-                suffisent pour observer une nette amélioration du sommeil.
-              </p>
-              <h3>Vais-je dormir pendant la séance&nbsp;?</h3>
-              <p>
-                Non, l’état d’hypnose n’est pas le sommeil. Vous restez
-                conscient(e) et guidé(e) vers une profonde détente.
-              </p>
-              <h3>Et si je me réveille la nuit après la séance&nbsp;?</h3>
-              <p>
-                Vous disposerez d’outils et de techniques pour vous rendormir
-                plus facilement et apaiser votre mental.
-              </p>
-              <h3>L’hypnose est-elle adaptée aux enfants&nbsp;?</h3>
-              <p>
-                Oui, l’hypnose est douce et adaptée à tous les âges, y compris
-                les enfants et adolescents.
-              </p>
-            </div>
+      <!-- CTA Section -->
+      <section class="section bg-gradient">
+        <div class="container text-center">
+          <h2 class="text-white mb-6">
+            Prêt(e) à retrouver des nuits réparatrices ?
+          </h2>
+          <p class="text-white text-xl mb-8 max-w-2xl mx-auto">
+            Ne laissez plus l'insomnie gâcher votre qualité de vie. Découvrez le
+            pouvoir de l'hypnose pour retrouver un sommeil naturel et
+            réparateur.
+          </p>
+          <div class="flex gap-4 justify-center">
+            <a href="tel:+33782835451" class="btn btn-primary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              07 82 83 54 51
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              Formulaire de contact
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="container footer-flex">
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>
-            Esther Allier<br />Cabinet d’hypnose à Strasbourg<br />Email :
-            <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a
-            ><br />Tél : <a href="tel:+33612345678">06 12 34 56 78</a>
-          </p>
-        </div>
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="aProposDeMoi.html">À propos</a></li>
-            <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Adresse</h3>
-          <p>
-            Esther Allier – Hypnothérapeute<br />
-            10 Rue du Général de Castelnau<br />
-            Espace Castelnau<br />
-            67000 STRASBOURG
-          </p>
-          <h3>Suivez-moi</h3>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                alt="Instagram"
-            /></a>
-            <a href="#" aria-label="Facebook"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                alt="Facebook"
-            /></a>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>
+              <strong>Esther Allier</strong><br />
+              Hypnothérapeute certifiée
+            </p>
+            <p>
+              📧
+              <a href="mailto:contact@estherallier.fr"
+                >contact@estherallier.fr</a
+              >
+            </p>
+            <p>📞 <a href="tel:+33782835451">07 82 83 54 51</a></p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="aProposDeMoi.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Adresse</h3>
+            <p>
+              <strong>Cabinet d'hypnose</strong><br />
+              10 Rue du Général de Castelnau<br />
+              Espace Castelnau<br />
+              67000 STRASBOURG
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Horaires</h3>
+            <p>
+              <strong>Lundi - Vendredi</strong><br />
+              9h00 - 19h00
+            </p>
+            <p>
+              <strong>Samedi</strong><br />
+              9h00 - 17h00
+            </p>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          &copy; 2025 Esther Allier. Tous droits réservés. |
-          <a href="#">Mentions légales</a>
-        </p>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Esther Allier. Tous droits réservés. |
+            <a href="#">Mentions légales</a>
+          </p>
+        </div>
       </div>
     </footer>
 
     <script>
-      // Menu burger responsive
-      const hamburger = document.getElementById("hamburger");
-      const nav = document.getElementById("main-nav");
-      hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        hamburger.classList.toggle("open");
+      // Menu mobile
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenuBtn.classList.toggle("active");
+        mainNav.classList.toggle("mobile-open");
       });
+
+      // Header scroll effect
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // FAQ Toggle
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const faqItem = question.parentElement;
+          const answer = faqItem.querySelector(".faq-answer");
+          const icon = question.querySelector("svg");
+
+          faqItem.classList.toggle("active");
+
+          if (faqItem.classList.contains("active")) {
+            answer.style.display = "block";
+            icon.style.transform = "rotate(180deg)";
+          } else {
+            answer.style.display = "none";
+            icon.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document
+        .querySelectorAll(
+          ".animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right"
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+          el.style.transition = "all 0.6s ease-out";
+          observer.observe(el);
+        });
     </script>
   </body>
 </html>

@@ -1,538 +1,556 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>À propos de moi • Esther ALLIER • Hypnothérapeute</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>À propos d'Esther Allier • Hypnothérapeute à Strasbourg</title>
     <meta
       name="description"
-      content="Découvrez mon parcours, ma formation et mon approche de l'hypnose thérapeutique à Strasbourg. Une méthode douce et efficace pour vous accompagner vers le bien-être."
+      content="Découvrez le parcours d'Esther Allier, hypnothérapeute certifiée à Strasbourg. Formation, approche thérapeutique et engagement pour votre bien-être."
     />
+    <link rel="stylesheet" href="modern-styles.css" />
   </head>
 
   <body>
-    <header class="main-header">
-      <div class="container header-flex">
-        <a
-          href="index.html"
-          class="logo"
-          style="
-            font-family: 'Montserrat', Arial, sans-serif;
-            font-weight: 700;
-            font-size: 2rem;
-            color: #203066;
-            letter-spacing: 1px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-          "
-        >
-          <span
-            style="
-              display: inline-block;
-              background: linear-gradient(90deg, #203066 60%, #ec008c 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-            "
-            >Esther Allier</span
-          >
-          <span
-            style="
-              font-size: 1.1rem;
-              font-weight: 400;
-              color: #ec008c;
-              margin-left: 2px;
-            "
-            >Hypnose</span
-          >
-        </a>
-        <nav class="main-nav" id="main-nav">
-          <a href="index.html">Accueil</a>
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Hypnose</a>
-            <div class="dropdown-content">
-              <a href="traumatisme.html">Traumatisme</a>
-              <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
-              <a href="tabac.html">Arrêt du tabac</a>
-              <a href="troubleDuSommeil.html">Trouble du sommeil</a>
-              <a href="stressAnxiete.html">Stress et Anxiété</a>
+    <!-- Header moderne -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span class="highlight">Esther</span> Allier
+          </a>
+
+          <nav class="nav" id="mainNav">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <div class="dropdown">
+              <div class="dropdown-trigger nav-link">
+                Hypnose
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="dropdown-menu">
+                <a href="traumatisme.html" class="dropdown-item"
+                  >Traumatismes</a
+                >
+                <a href="troublesAlimentaire.html" class="dropdown-item"
+                  >Troubles Alimentaires</a
+                >
+                <a href="tabac.html" class="dropdown-item">Arrêt du Tabac</a>
+                <a href="troubleDuSommeil.html" class="dropdown-item"
+                  >Troubles du Sommeil</a
+                >
+                <a href="stressAnxiete.html" class="dropdown-item"
+                  >Stress & Anxiété</a
+                >
+              </div>
             </div>
-          </div>
-          <a href="Psychogenealogie.html">Psychogénéalogie</a>
-          <a href="contact.html">Contact</a>
-          <a href="aProposDeMoi.html">À propos</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
+            <a href="Psychogenealogie.html" class="nav-link"
+              >Psychogénéalogie</a
+            >
+            <a href="aProposDeMoi.html" class="nav-link active">À propos</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
 
     <main>
-      <section
-        class="hero about-hero"
-        style="
-          background-image: linear-gradient(
-              rgba(32, 48, 102, 0.7),
-              rgba(236, 0, 140, 0.3)
-            ),
-            url('https://images.pexels.com/photos/6787202/pexels-photo-6787202.jpeg');
-          background-size: cover;
-          background-position: center;
-          color: #fff;
-          padding: 70px 0 40px 0;
-        "
-      >
-        <div
-          class="container hero-content"
-          style="
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          "
-        >
-          <h1
-            style="
-              font-size: 2.5rem;
-              font-weight: 700;
-              margin-bottom: 10px;
-              letter-spacing: 1px;
-            "
-          >
-            À propos de moi
-          </h1>
-          <h2 style="font-size: 1.3rem; font-weight: 400; margin-bottom: 22px">
-            Découvrez mon parcours, ma mission et mon approche de
-            l'hypnothérapie
-          </h2>
-          <a href="#mission" class="cta-btn" style="margin-top: 10px"
-            >Ma mission</a
-          >
-        </div>
-      </section>
-      <!-- Mission Section -->
-      <section id="mission" class="section section-gray">
+      <!-- Hero Section -->
+      <section class="hero">
         <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Ma mission</h2>
-              <p style="max-width: 700px; margin: 0 auto 20px">
-                Ma mission est de vous accompagner avec bienveillance, respect
-                et professionnalisme vers une vie plus épanouie. Je crois
-                profondément au potentiel de chacun et à la capacité de
-                transformation grâce à l’hypnose. Mon objectif est de vous aider
-                à révéler vos ressources intérieures et à retrouver confiance en
-                vous.
+          <div class="hero-content">
+            <div class="hero-text animate-fade-in-left text-center">
+              <h1 class="hero-title">
+                <span class="highlight">Esther Allier</span><br />
+                Hypnothérapeute certifiée
+              </h1>
+              <p class="hero-subtitle">
+                Passionnée par l'accompagnement humain, je vous guide avec
+                bienveillance vers un mieux-être durable grâce à l'hypnose
+                thérapeutique.
               </p>
+              <a href="contact.html" class="btn btn-primary btn-lg">
+                Prendre rendez-vous
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Introduction Section -->
-      <section class="section">
-        <div class="container about-flex">
-          <div class="about-img">
-            <img
-              src="https://images.pexels.com/photos/5325840/pexels-photo-5325840.jpeg"
-              alt="Esther ALLIER - Hypnothérapeute"
-            />
-          </div>
-          <div class="about-text">
-            <h2>Qui suis-je ?</h2>
-            <p>
-              Bonjour, je suis <strong>Esther ALLIER</strong>, hypnothérapeute à
-              Strasbourg et en ligne.
-            </p>
-            <p>
-              Mon parcours vers l'hypnothérapie est né d'une passion pour la
-              compréhension de l'esprit humain et d'un désir profond
-              d'accompagner les personnes vers leur bien-être. Après une
-              formation rigoureuse en hypnose ericksonienne, j'ai décidé de
-              consacrer mon activité professionnelle à l'accompagnement
-              thérapeutique par l'hypnose.
-            </p>
-            <p>
-              Au-delà de ma pratique professionnelle, je suis une personne
-              engagée, curieuse et bienveillante. J'accorde une importance
-              particulière à l'écoute empathique et au respect de chaque
-              individualité.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Formation Section -->
-      <section class="section section-gray">
+      <!-- Section Présentation -->
+      <section class="section bg-white">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Ma formation</h2>
-              <p class="text-center">
-                Ma pratique de l'hypnothérapie s'appuie sur une formation solide
-                et une mise à jour constante de mes connaissances.
-              </p>
-
-              <div style="max-width: 800px; margin: 0 auto">
-                <div style="margin-bottom: 30px">
-                  <h3>Formation principale</h3>
-                  <ul>
-                    <li>
-                      Certification en Hypnose Ericksonienne - Institut XYZ
-                      (Paris)
-                    </li>
-                    <li>
-                      Formation avancée en Psychogénéalogie - Centre de
-                      Formation ABC
-                    </li>
-                    <li>
-                      Spécialisation en gestion des traumatismes par l'hypnose
-                    </li>
-                    <li>
-                      Techniques de PNL (Programmation Neuro-Linguistique)
-                      appliquées à l'hypnothérapie
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <h3>Formation continue</h3>
-                  <ul>
-                    <li>
-                      Ateliers réguliers sur les nouvelles approches en
-                      hypnothérapie
-                    </li>
-                    <li>
-                      Participation à des congrès internationaux sur l'hypnose
-                    </li>
-                    <li>Supervision clinique et analyse de pratiques</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Approach Section -->
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Mon approche</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Mon approche de l'hypnose thérapeutique</h2>
               <p>
-                Mon approche de l'hypnothérapie est centrée sur la personne,
-                respectueuse de son rythme et de ses besoins. Je considère
-                l'hypnose comme un outil puissant de communication avec
-                l'inconscient, permettant de mobiliser les ressources
-                intérieures pour résoudre les difficultés rencontrées.
+                Diplômée en hypnose thérapeutique, je vous accompagne depuis
+                plusieurs années dans votre démarche de changement et de
+                bien-être. Mon approche se veut bienveillante, respectueuse et
+                adaptée à chaque personne.
               </p>
-
-              <div
-                style="
-                  display: grid;
-                  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                  gap: 20px;
-                  margin: 40px 0;
-                "
-              >
-                <div
-                  style="
-                    padding: 20px;
-                    background-color: #f9f9f9;
-                    border-radius: 5px;
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-                  "
-                >
-                  <h3 style="color: var(--primary-color)">Bienveillance</h3>
-                  <p>
-                    Chaque personne est accueillie sans jugement, dans une
-                    écoute attentive et empathique.
-                  </p>
-                </div>
-
-                <div
-                  style="
-                    padding: 20px;
-                    background-color: #f9f9f9;
-                    border-radius: 5px;
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-                  "
-                >
-                  <h3 style="color: var(--primary-color)">Sur-mesure</h3>
-                  <p>
-                    Chaque séance est personnalisée et adaptée à vos objectifs
-                    et votre personnalité.
-                  </p>
-                </div>
-
-                <div
-                  style="
-                    padding: 20px;
-                    background-color: #f9f9f9;
-                    border-radius: 5px;
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-                  "
-                >
-                  <h3 style="color: var(--primary-color)">Autonomie</h3>
-                  <p>
-                    Mon but est de vous donner les outils pour devenir autonome
-                    dans la gestion de vos difficultés.
-                  </p>
-                </div>
-
-                <div
-                  style="
-                    padding: 20px;
-                    background-color: #f9f9f9;
-                    border-radius: 5px;
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-                  "
-                >
-                  <h3 style="color: var(--primary-color)">Éthique</h3>
-                  <p>
-                    Je m'engage à respecter un code d'éthique strict,
-                    garantissant confidentialité et respect.
-                  </p>
-                </div>
-              </div>
+              <p>
+                Je crois profondément que chacun possède en lui les ressources
+                nécessaires pour surmonter ses difficultés. Mon rôle est de vous
+                aider à les révéler et à les mobiliser grâce aux techniques
+                d'hypnose.
+              </p>
+              <p>
+                Que ce soit pour arrêter de fumer, gérer le stress, surmonter un
+                traumatisme ou retrouver un sommeil réparateur, je vous propose
+                un accompagnement personnalisé dans un cadre sécurisant et
+                confidentiel.
+              </p>
+            </div>
+            <div class="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Esther Allier, hypnothérapeute"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Testimonials Section -->
-      <section class="section section-gray">
+      <!-- Section Formation -->
+      <section class="section bg-gray-50">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Témoignages</h2>
-              <p class="text-center" style="margin-bottom: 40px">
-                Découvrez l'expérience de personnes que j'ai accompagnées
-              </p>
+          <div class="text-center mb-16">
+            <h2>Formation et certifications</h2>
+            <p class="section-subtitle">
+              Une formation solide et une pratique régulière pour vous offrir le
+              meilleur accompagnement possible.
+            </p>
+          </div>
 
-              <div
-                style="
-                  display: grid;
-                  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-                  gap: 30px;
-                "
-              >
-                <div
-                  style="
-                    padding: 25px;
-                    background-color: #fff;
-                    border-radius: 10px;
-                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-                    position: relative;
-                  "
-                >
-                  <div
-                    style="
-                      font-size: 60px;
-                      color: var(--primary-color);
-                      position: absolute;
-                      top: -20px;
-                      left: 20px;
-                      opacity: 0.2;
-                    "
+          <div class="grid grid-cols-2 gap-8 mb-12">
+            <div class="card p-8">
+              <h3 class="mb-6">🎓 Formation initiale</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Diplôme en Hypnose Thérapeutique</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span
+                    >Formation en Programmation Neuro-Linguistique (PNL)</span
                   >
-                    "
-                  </div>
-                  <p style="position: relative; z-index: 1">
-                    Après plusieurs années à lutter contre des crises
-                    d'angoisse, j'ai trouvé avec Esther une approche qui m'a
-                    véritablement aidée. Ses séances d'hypnose m'ont permis de
-                    comprendre l'origine de mes angoisses et de développer des
-                    outils pour les gérer efficacement.
-                  </p>
-                  <p
-                    style="
-                      font-weight: bold;
-                      margin-bottom: 0;
-                      color: var(--secondary-color);
-                    "
-                  >
-                    Marie P.
-                  </p>
-                  <p style="margin-top: 5px; font-size: 14px">
-                    Troubles anxieux
-                  </p>
-                </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Certification en Hypnose Ericksonienne</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Spécialisation Arrêt du Tabac</span>
+                </li>
+              </ul>
+            </div>
 
-                <div
-                  style="
-                    padding: 25px;
-                    background-color: #fff;
-                    border-radius: 10px;
-                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-                    position: relative;
-                  "
-                >
-                  <div
-                    style="
-                      font-size: 60px;
-                      color: var(--primary-color);
-                      position: absolute;
-                      top: -20px;
-                      left: 20px;
-                      opacity: 0.2;
-                    "
+            <div class="card p-8">
+              <h3 class="mb-6">📚 Formation continue</h3>
+              <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Supervision régulière avec des pairs</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Participation à des congrès d'hypnose</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span
+                    >Formations spécialisées (traumatismes, troubles
+                    alimentaires)</span
                   >
-                    "
-                  </div>
-                  <p style="position: relative; z-index: 1">
-                    J'ai consulté Esther pour arrêter de fumer après plusieurs
-                    tentatives infructueuses. Sa méthode d'hypnose m'a permis
-                    d'identifier les véritables raisons de ma dépendance et de
-                    m'en libérer en seulement deux séances.
-                  </p>
-                  <p
-                    style="
-                      font-weight: bold;
-                      margin-bottom: 0;
-                      color: var(--secondary-color);
-                    "
-                  >
-                    Thomas L.
-                  </p>
-                  <p style="margin-top: 5px; font-size: 14px">Arrêt du tabac</p>
-                </div>
-
-                <div
-                  style="
-                    padding: 25px;
-                    background-color: #fff;
-                    border-radius: 10px;
-                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-                    position: relative;
-                  "
-                >
-                  <div
-                    style="
-                      font-size: 60px;
-                      color: var(--primary-color);
-                      position: absolute;
-                      top: -20px;
-                      left: 20px;
-                      opacity: 0.2;
-                    "
-                  >
-                    "
-                  </div>
-                  <p style="position: relative; z-index: 1">
-                    Le travail en psychogénéalogie avec Esther a été une
-                    révélation pour moi. J'ai pu identifier des schémas
-                    familiaux qui se répétaient dans ma vie sans que j'en aie
-                    conscience. Cette prise de conscience m'a permis de faire
-                    des choix plus éclairés dans ma vie personnelle et
-                    professionnelle.
-                  </p>
-                  <p
-                    style="
-                      font-weight: bold;
-                      margin-bottom: 0;
-                      color: var(--secondary-color);
-                    "
-                  >
-                    Sophie M.
-                  </p>
-                  <p style="margin-top: 5px; font-size: 14px">
-                    Psychogénéalogie
-                  </p>
-                </div>
-              </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Adhésion à des associations professionnelles</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Conclusion Section -->
-      <section class="section cta-section">
+      <!-- Section Valeurs -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Mes valeurs et engagements</h2>
+          </div>
+
+          <div class="grid grid-cols-auto gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🤝</div>
+              <h3 class="mb-4">Bienveillance</h3>
+              <p>
+                Un accompagnement respectueux et sans jugement, dans l'écoute de
+                vos besoins et de votre rythme.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🔒</div>
+              <h3 class="mb-4">Confidentialité</h3>
+              <p>
+                Respect absolu du secret professionnel et protection de votre
+                vie privée en toutes circonstances.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🎯</div>
+              <h3 class="mb-4">Efficacité</h3>
+              <p>
+                Des techniques éprouvées et adaptées à votre situation pour des
+                résultats durables et mesurables.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Méthodes -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Ma méthode de travail</h2>
+          </div>
+
+          <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">👂</div>
+              <h3 class="mb-4">1. Écoute active</h3>
+              <p>
+                Compréhension approfondie de votre situation, de vos objectifs
+                et de vos ressources.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🎨</div>
+              <h3 class="mb-4">2. Personnalisation</h3>
+              <p>
+                Adaptation des techniques d'hypnose à votre personnalité et à
+                vos besoins spécifiques.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🌱</div>
+              <h3 class="mb-4">3. Accompagnement</h3>
+              <p>
+                Suivi de vos progrès et ajustement de l'approche pour garantir
+                des résultats durables.
+              </p>
+            </div>
+          </div>
+
+          <div class="card p-8 text-center">
+            <h3 class="mb-6">Un cadre thérapeutique sécurisant</h3>
+            <p class="mb-6">
+              Mon cabinet offre un environnement calme et apaisant, propice à la
+              détente et au travail thérapeutique. Chaque séance se déroule dans
+              le respect de votre intimité et de votre confidentialité.
+            </p>
+            <p class="mb-8">
+              Je m'engage à respecter le code de déontologie des
+              hypnothérapeutes et à maintenir mes compétences à jour par une
+              formation continue.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              Découvrir mon cabinet
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Spécialisations -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Mes domaines de spécialisation</h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-8">
+            <div class="card p-8">
+              <h3 class="mb-6">🧠 Hypnose thérapeutique</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Gestion du stress et de l'anxiété</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Troubles du sommeil et insomnie</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Confiance en soi et estime de soi</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Préparation aux examens et concours</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card p-8">
+              <h3 class="mb-6">🎯 Accompagnements spécialisés</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Arrêt du tabac (méthode spécialisée)</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Troubles alimentaires et poids</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Traumatismes et stress post-traumatique</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-success">✓</span>
+                  <span>Phobies et peurs irrationnelles</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Témoignages -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Ce que disent mes patients</h2>
+            <p class="section-subtitle">
+              Leurs témoignages reflètent ma passion pour l'accompagnement et
+              l'efficacité de l'hypnose thérapeutique.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-auto gap-8">
+            <div class="card p-8">
+              <div class="mb-4">
+                <div class="flex gap-1 mb-3">
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                </div>
+                <p class="italic">
+                  "J'ai arrêté de fumer dès la première séance avec Esther. Sa
+                  méthode est vraiment efficace et son approche très
+                  bienveillante. Je recommande vivement !"
+                </p>
+              </div>
+              <div class="text-sm font-bold">Marie, 34 ans</div>
+            </div>
+
+            <div class="card p-8">
+              <div class="mb-4">
+                <div class="flex gap-1 mb-3">
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                </div>
+                <p class="italic">
+                  "Après des années d'insomnie, j'ai retrouvé un sommeil
+                  réparateur grâce à l'hypnose. Esther m'a donné des outils
+                  concrets que j'utilise encore aujourd'hui."
+                </p>
+              </div>
+              <div class="text-sm font-bold">Thomas, 42 ans</div>
+            </div>
+
+            <div class="card p-8">
+              <div class="mb-4">
+                <div class="flex gap-1 mb-3">
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                  <span class="text-yellow-500">⭐</span>
+                </div>
+                <p class="italic">
+                  "Un accompagnement formidable pour surmonter mon stress au
+                  travail. Esther est à l'écoute et ses techniques sont très
+                  efficaces. Je me sens beaucoup mieux !"
+                </p>
+              </div>
+              <div class="text-sm font-bold">Sophie, 28 ans</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Engagement -->
+      <section class="section bg-primary text-white">
         <div class="container text-center">
-          <h2>Prêt à commencer votre parcours&nbsp;?</h2>
-          <p style="max-width: 700px; margin: 0 auto 30px">
-            Si vous souhaitez entreprendre un travail sur vous-même, dépasser
-            vos blocages et révéler votre potentiel, je serais heureuse de vous
-            accompagner dans cette démarche.
+          <h2 class="text-white mb-6">Mon engagement envers vous</h2>
+          <p class="text-xl mb-8 max-w-3xl mx-auto">
+            Je m'engage à vous accompagner avec professionnalisme, bienveillance
+            et éthique dans votre démarche de changement. Votre bien-être est ma
+            priorité absolue.
           </p>
-          <a href="contact.html" class="cta-btn">Prendre rendez-vous</a>
-          <a
-            href="tel:0782835451"
-            class="cta-btn"
-            style="
-              background: var(--secondary-color);
-              color: #fff;
-              margin-left: 10px;
-            "
-            >Appelez-moi</a
-          >
+          <div class="grid grid-cols-auto gap-6 mb-8">
+            <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+              <h3 class="text-white mb-2">🏆 Qualité</h3>
+              <p class="text-white">
+                Formation continue et respect des standards professionnels
+              </p>
+            </div>
+            <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+              <h3 class="text-white mb-2">⏱️ Disponibilité</h3>
+              <p class="text-white">
+                Écoute et suivi personnalisé tout au long de votre parcours
+              </p>
+            </div>
+            <div class="bg-white bg-opacity-20 p-6 rounded-lg">
+              <h3 class="text-white mb-2">🎯 Résultats</h3>
+              <p class="text-white">
+                Techniques éprouvées pour des changements durables
+              </p>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-secondary btn-lg">
+            Commencer votre transformation
+          </a>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="container footer-flex">
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>
-            Esther Allier<br />Cabinet d’hypnose à Strasbourg<br />Email :
-            <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a
-            ><br />Tél : <a href="tel:+33612345678">06 12 34 56 78</a>
-          </p>
-        </div>
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="aProposDeMoi.html">À propos</a></li>
-            <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Adresse</h3>
-          <p>
-            Esther Allier – Hypnothérapeute<br />
-            10 Rue du Général de Castelnau<br />
-            Espace Castelnau<br />
-            67000 STRASBOURG
-          </p>
-          <h3>Suivez-moi</h3>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                alt="Instagram"
-            /></a>
-            <a href="#" aria-label="Facebook"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                alt="Facebook"
-            /></a>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>
+              <strong>Esther Allier</strong><br />
+              Hypnothérapeute certifiée
+            </p>
+            <p>
+              📧
+              <a href="mailto:contact@estherallier.fr"
+                >contact@estherallier.fr</a
+              >
+            </p>
+            <p>📞 <a href="tel:+33782835451">07 82 83 54 51</a></p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="aProposDeMoi.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Adresse</h3>
+            <p>
+              <strong>Cabinet d'hypnose</strong><br />
+              10 Rue du Général de Castelnau<br />
+              Espace Castelnau<br />
+              67000 STRASBOURG
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Horaires</h3>
+            <p>
+              <strong>Lundi - Vendredi</strong><br />
+              9h00 - 19h00
+            </p>
+            <p>
+              <strong>Samedi</strong><br />
+              9h00 - 17h00
+            </p>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          &copy; 2025 Esther Allier. Tous droits réservés. |
-          <a href="#">Mentions légales</a>
-        </p>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Esther Allier. Tous droits réservés. |
+            <a href="#">Mentions légales</a>
+          </p>
+        </div>
       </div>
     </footer>
 
     <script>
-      // Menu burger responsive
-      const hamburger = document.getElementById("hamburger");
-      const nav = document.getElementById("main-nav");
-      hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        hamburger.classList.toggle("open");
+      // Menu mobile
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenuBtn.classList.toggle("active");
+        mainNav.classList.toggle("mobile-open");
       });
+
+      // Header scroll effect
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document
+        .querySelectorAll(
+          ".animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right"
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+          el.style.transition = "all 0.6s ease-out";
+          observer.observe(el);
+        });
     </script>
   </body>
 </html>

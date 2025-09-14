@@ -1,382 +1,671 @@
 <!DOCTYPE html>
-<html lang="fr-FR">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Traumatisme et hypnose • Esther ALLIER</title>
+    <title>Traumatismes et Hypnose Thérapeutique • Esther Allier</title>
+    <meta
+      name="description"
+      content="Hypnose pour surmonter les traumatismes à Strasbourg. Accompagnement bienveillant pour dépasser les chocs émotionnels et retrouver l'équilibre."
+    />
+    <link rel="stylesheet" href="modern-styles.css" />
   </head>
 
   <body>
-    <header class="main-header">
-      <div class="container header-flex">
-        <a
-          href="index.html"
-          class="logo"
-          style="
-            font-family: 'Montserrat', Arial, sans-serif;
-            font-weight: 700;
-            font-size: 2rem;
-            color: #203066;
-            letter-spacing: 1px;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-          "
-        >
-          <span
-            style="
-              display: inline-block;
-              background: linear-gradient(90deg, #203066 60%, #ec008c 100%);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-              background-clip: text;
-            "
-            >Esther Allier</span
-          >
-          <span
-            style="
-              font-size: 1.1rem;
-              font-weight: 400;
-              color: #ec008c;
-              margin-left: 2px;
-            "
-            >Hypnose</span
-          >
-        </a>
-        <nav class="main-nav" id="main-nav">
-          <a href="index.html">Accueil</a>
-          <div class="dropdown">
-            <a href="#" class="dropbtn">Hypnose</a>
-            <div class="dropdown-content">
-              <a href="traumatisme.html">Traumatisme</a>
-              <a href="troublesAlimentaire.html">Troubles Alimentaires</a>
-              <a href="tabac.html">Arrêt du tabac</a>
-              <a href="troubleDuSommeil.html">Trouble du sommeil</a>
-              <a href="stressAnxiete.html">Stress et Anxiété</a>
+    <!-- Header moderne -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="index.html" class="logo">
+            <span class="highlight">Esther</span> Allier
+          </a>
+
+          <nav class="nav" id="mainNav">
+            <a href="index.html" class="nav-link">Accueil</a>
+            <div class="dropdown">
+              <div class="dropdown-trigger nav-link">
+                Hypnose
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="dropdown-menu">
+                <a href="traumatisme.html" class="dropdown-item active"
+                  >Traumatismes</a
+                >
+                <a href="troublesAlimentaire.html" class="dropdown-item"
+                  >Troubles Alimentaires</a
+                >
+                <a href="tabac.html" class="dropdown-item">Arrêt du Tabac</a>
+                <a href="troubleDuSommeil.html" class="dropdown-item"
+                  >Troubles du Sommeil</a
+                >
+                <a href="stressAnxiete.html" class="dropdown-item"
+                  >Stress & Anxiété</a
+                >
+              </div>
             </div>
-          </div>
-          <a href="Psychogenealogie.html">Psychogénéalogie</a>
-          <a href="contact.html">Contact</a>
-          <a href="aProposDeMoi.html">À propos</a>
-        </nav>
-        <div class="hamburger" id="hamburger">
-          <span></span><span></span><span></span>
+            <a href="Psychogenealogie.html" class="nav-link"
+              >Psychogénéalogie</a
+            >
+            <a href="aProposDeMoi.html" class="nav-link">À propos</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </nav>
+
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
       </div>
     </header>
 
     <main>
-      <section
-        class="hero about-hero"
-        style="
-          background-image: linear-gradient(
-              rgba(32, 48, 102, 0.7),
-              rgba(236, 0, 140, 0.3)
-            ),
-            url('Heliosa/IMG-20250403-WA0001.jpg');
-          background-size: cover;
-          background-position: center;
-          color: #fff;
-          padding: 70px 0 40px 0;
-        "
-      >
-        <div
-          class="container hero-content"
-          style="
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-          "
-        >
-          <h1
-            style="
-              font-size: 2.5rem;
-              font-weight: 700;
-              margin-bottom: 10px;
-              letter-spacing: 1px;
-            "
-          >
-            Traitement des traumatismes
-          </h1>
-          <h2
-            style="
-              font-size: 1.3rem;
-              font-weight: 400;
-              margin-bottom: 22px;
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          >
-            L'hypnose est une méthode efficace pour traiter les traumatismes et
-            retrouver votre sérénité.
-          </h2>
-          <a href="#pourquoi" class="cta-btn" style="margin-top: 10px"
-            >Pourquoi choisir l’hypnose&nbsp;?</a
-          >
-        </div>
-      </section>
-      <!-- Section Pourquoi choisir l’hypnose ? -->
-      <section class="section highlight-section" id="pourquoi">
+      <!-- Hero Section -->
+      <section class="hero">
         <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>
-                Pourquoi choisir l’hypnose pour traiter un traumatisme&nbsp;?
-              </h2>
-              <p>
-                L’hypnose permet d’accéder à l’inconscient, là où sont stockées
-                les mémoires traumatiques. Elle facilite le retraitement
-                émotionnel, la libération des blocages et la reconstruction de
-                la confiance en soi.
+          <div class="hero-content">
+            <div class="hero-text animate-fade-in-left text-center">
+              <h1 class="hero-title">
+                Surmonter les
+                <span class="highlight">traumatismes</span>
+                avec l'hypnose
+              </h1>
+              <p class="hero-subtitle">
+                Un accompagnement bienveillant et efficace pour dépasser les
+                chocs émotionnels, libérer les blocages et retrouver votre force
+                intérieure.
               </p>
-              <ul class="checklist">
-                <li>Approche douce et sécurisante</li>
-                <li>Respect du rythme de chacun</li>
-                <li>Résultats rapides et durables</li>
-                <li>Accompagnement personnalisé</li>
-                <li>Gestion des émotions et du stress</li>
-              </ul>
-              <a href="contact.html" class="cta-btn">Prendre rendez-vous</a>
+              <a href="#accompagnement" class="btn btn-primary btn-lg">
+                Découvrir l'accompagnement
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section-gray">
+      <!-- Section Accompagnement -->
+      <section id="accompagnement" class="section bg-white">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Vous souffrez de traumatismes mais…</h2>
-              <ul class="checklist">
-                <li>Vous n’arrivez pas à vous en libérer</li>
-                <li>Vous revivez régulièrement des souvenirs douloureux</li>
-                <li>Votre sommeil est perturbé par des cauchemars</li>
-                <li>Vous êtes en état d’hypervigilance</li>
-                <li>Vous évitez certaines situations par peur</li>
-                <li>Les thérapies classiques n’ont pas fonctionné</li>
+          <div class="text-center mb-16">
+            <h2>L'hypnose pour guérir les blessures du passé</h2>
+            <p class="section-subtitle">
+              Les traumatismes laissent des empreintes profondes qui perturbent
+              votre quotidien. L'hypnose thérapeutique offre un chemin de
+              guérison doux et respectueux pour retrouver votre équilibre et
+              votre sérénité.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-auto gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🤝</div>
+              <h3 class="mb-4">Approche bienveillante</h3>
+              <p>
+                Un cadre sécurisant et sans jugement pour explorer et
+                transformer vos blessures émotionnelles.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🔓</div>
+              <h3 class="mb-4">Libération douce</h3>
+              <p>
+                L'hypnose permet de désamorcer la charge émotionnelle liée au
+                traumatisme sans revivre la douleur.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🌱</div>
+              <h3 class="mb-4">Reconstruction</h3>
+              <p>
+                Retrouvez confiance en vous et en la vie, développez vos
+                ressources intérieures.
+              </p>
+            </div>
+          </div>
+
+          <div class="text-center">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              Commencer ma guérison
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Types de traumatismes -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Types de traumatismes accompagnés</h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-8 mb-12">
+            <div class="card p-8">
+              <h3 class="mb-6">💔 Traumatismes émotionnels</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Deuil, perte d'un proche</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Rupture, séparation douloureuse</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Échec professionnel ou personnel</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Humiliation, rejet</span>
+                </li>
               </ul>
-              <div class="text-center" style="margin-top: 18px">
-                <a href="tel:0782835451" class="cta-btn">Je veux en parler</a>
+            </div>
+
+            <div class="card p-8">
+              <h3 class="mb-6">⚡ Traumatismes aigus</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Accident, agression</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Catastrophe naturelle</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Intervention chirurgicale traumatisante</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Violence physique ou psychologique</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card p-8">
+            <h3 class="mb-6 text-center">🔄 Traumatismes répétitifs</h3>
+            <div class="grid grid-cols-2 gap-6">
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Maltraitance dans l'enfance</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Harcèlement moral ou scolaire</span>
+                </li>
+              </ul>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Violence conjugale</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Négligence émotionnelle</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="text-center mt-8">
+            <a href="tel:0782835451" class="btn btn-secondary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              Parlons de votre situation
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Comment ça marche -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="about-content">
+            <div class="about-text">
+              <h2>Comment l'hypnose aide-t-elle à guérir ?</h2>
+              <p>
+                L'hypnose thérapeutique permet d'accéder aux ressources
+                inconscientes de guérison et de résilience présentes en chacun
+                de nous.
+              </p>
+              <p>
+                Elle aide à désactiver les réactions automatiques liées au
+                traumatisme, à transformer les émotions douloureuses et à
+                retrouver un sentiment de sécurité intérieure.
+              </p>
+              <p>
+                Le travail se fait dans le respect de votre rythme, sans vous
+                exposer à nouveau à la souffrance. Vous repartez avec des
+                ressources durables pour votre bien-être.
+              </p>
+              <a href="contact.html" class="btn btn-primary">
+                Entamer ma guérison
+              </a>
+            </div>
+            <div class="about-image">
+              <img
+                src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Personne sereine regardant vers l'avenir"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Signes -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Signes qu'un traumatisme vous affecte encore</h2>
+          </div>
+
+          <div class="grid grid-cols-2 gap-8 mb-12">
+            <div class="card p-8">
+              <h3 class="mb-6">😔 Symptômes émotionnels</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Reviviscences, flashbacks</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Cauchemars récurrents</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Évitement de certaines situations</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Hypervigilance, sursauts</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="card p-8">
+              <h3 class="mb-6">🧠 Impact sur la vie quotidienne</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Difficultés relationnelles</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Perte de confiance en soi</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Troubles du sommeil</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="text-primary">✓</span>
+                  <span>Sentiment de détachement</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Processus -->
+      <section class="section bg-white">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Le processus de guérison</h2>
+          </div>
+
+          <div class="grid grid-cols-3 gap-8 mb-12">
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">👂</div>
+              <h3 class="mb-4">1. Écoute et évaluation</h3>
+              <p>
+                Entretien bienveillant pour comprendre votre vécu et définir les
+                objectifs thérapeutiques.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">🔄</div>
+              <h3 class="mb-4">2. Transformation douce</h3>
+              <p>
+                Techniques d'hypnose adaptées pour traiter le traumatisme sans
+                retraumatisation.
+              </p>
+            </div>
+
+            <div class="card p-8 text-center">
+              <div class="service-icon mb-6">✨</div>
+              <h3 class="mb-4">3. Reconstruction</h3>
+              <p>
+                Renforcement de vos ressources et intégration de nouveaux
+                schémas positifs.
+              </p>
+            </div>
+          </div>
+
+          <div class="card p-8 text-center">
+            <h3 class="mb-6">Informations pratiques</h3>
+            <div class="grid grid-cols-3 gap-6 mb-8">
+              <div>
+                <div class="service-icon mb-3">⏰</div>
+                <p class="font-bold">Durée</p>
+                <p>90 minutes</p>
+              </div>
+              <div>
+                <div class="service-icon mb-3">💰</div>
+                <p class="font-bold">Tarif</p>
+                <p>87 € / séance</p>
+              </div>
+              <div>
+                <div class="service-icon mb-3">🔢</div>
+                <p class="font-bold">Séances</p>
+                <p>3 à 6 selon le cas</p>
+              </div>
+            </div>
+            <p class="mb-8">
+              Chaque traumatisme est unique. L'accompagnement est personnalisé
+              selon votre histoire et vos besoins spécifiques.
+            </p>
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              Prendre rendez-vous
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="section bg-gray-50">
+        <div class="container">
+          <div class="text-center mb-16">
+            <h2>Questions fréquentes</h2>
+          </div>
+
+          <div class="max-w-4xl mx-auto space-y-6">
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>
+                  Vais-je devoir revivre mon traumatisme pendant la séance ?
+                </h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Non, l'hypnose thérapeutique permet de traiter le traumatisme
+                  sans vous exposer à nouveau à la souffrance. Le travail se
+                  fait en douceur.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>
+                  Combien de temps après un traumatisme peut-on consulter ?
+                </h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Il n'y a pas de délai. Que le traumatisme soit récent ou
+                  ancien, l'hypnose peut aider à tout moment de votre parcours
+                  de guérison.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>L'hypnose peut-elle effacer complètement le souvenir ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  L'objectif n'est pas d'effacer le souvenir mais de transformer
+                  la charge émotionnelle qui y est associée pour qu'il ne vous
+                  fasse plus souffrir.
+                </p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <div class="faq-question">
+                <h3>Est-ce que tout se règle en une séance ?</h3>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="6,9 12,15 18,9"></polyline>
+                </svg>
+              </div>
+              <div class="faq-answer">
+                <p>
+                  Cela dépend de la nature et de la complexité du traumatisme.
+                  Généralement, 3 à 6 séances permettent un travail de guérison
+                  approfondi.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Hypnose pour traiter les traumatismes</h2>
-              <p>
-                Des études cliniques montrent que l’hypnose thérapeutique est
-                particulièrement efficace pour traiter les traumatismes
-                psychologiques et le stress post-traumatique, avec des résultats
-                rapides et durables.
-              </p>
-              <p>
-                Pourquoi&nbsp;? Parce que l’hypnothérapie permet d’accéder à la
-                mémoire traumatique stockée dans l’inconscient et de la
-                retraiter de façon sécurisée, sans revivre l’intensité
-                émotionnelle du trauma.
-              </p>
-              <p>
-                L’hypnothérapie vous aide à transformer la perception de
-                l’événement traumatique et à créer de nouvelles associations
-                mentales positives pour vous libérer du passé.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>Comprendre et traiter le traumatisme</h2>
-              <p>
-                Le traumatisme a un impact sur deux aspects de votre
-                fonctionnement cérébral&nbsp;:
-                <strong>votre système conscient et inconscient.</strong>
-              </p>
-              <p>
-                Consciemment, vous savez que le danger est passé et que vous
-                êtes en sécurité maintenant. Cependant,
-                <strong
-                  >votre inconscient continue à réagir comme si la menace était
-                  toujours présente</strong
-                >, déclenchant des réponses automatiques de stress, d’anxiété et
-                de peur.
-              </p>
-              <p>
-                Retrouvez votre équilibre émotionnel et votre sérénité en
-                libérant votre système nerveux des empreintes du
-                traumatisme&nbsp;!
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Séance d'hypnose pour traiter un traumatisme</h2>
-              <p>
-                <strong>Durée&nbsp;:</strong> 60 à 90 minutes<br />
-                <strong>Tarif&nbsp;:</strong> 87 €<br />
-                <strong>Lieu&nbsp;:</strong> Cabinet à Strasbourg ou à distance
-              </p>
-              <p>
-                Des techniques spécifiques de distanciation et de retraitement
-                émotionnel sont utilisées pour aborder le traumatisme en toute
-                sécurité.
-              </p>
-              <p>
-                Un suivi personnalisé est proposé selon vos besoins pour
-                consolider les progrès et renforcer votre résilience.
-              </p>
-              <a href="tel:0782835451" class="cta-btn">Appelez-moi</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section Conseils pour avancer -->
-      <section class="section tips-section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">
-                Conseils pour avancer après un traumatisme
-              </h2>
-              <ul class="checklist">
-                <li>Accueillez vos émotions sans jugement</li>
-                <li>Entourez-vous de personnes bienveillantes</li>
-                <li>
-                  Pratiquez des activités apaisantes (respiration, relaxation,
-                  marche…)
-                </li>
-                <li>Félicitez-vous de chaque petit progrès</li>
-                <li>N’hésitez pas à demander de l’aide professionnelle</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section section-gray">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2 class="text-center">Questions fréquentes</h2>
-              <h3>
-                Vais-je devoir revivre mon traumatisme pendant la séance&nbsp;?
-              </h3>
-              <p>
-                Non, l’hypnothérapie utilise des techniques de distanciation qui
-                permettent de travailler sur le traumatisme sans revivre les
-                émotions douloureuses. Votre sécurité émotionnelle est la
-                priorité.
-              </p>
-              <h3>Combien de séances sont nécessaires&nbsp;?</h3>
-              <p>
-                Chaque personne est unique, mais généralement entre 3 et 6
-                séances suffisent pour traiter efficacement un traumatisme. Les
-                situations complexes peuvent nécessiter un accompagnement plus
-                long.
-              </p>
-              <h3>
-                L’hypnose peut-elle traiter tous types de traumatismes&nbsp;?
-              </h3>
-              <p>
-                L’hypnose est efficace pour la plupart des traumatismes
-                psychologiques, qu’ils soient récents ou anciens&nbsp;:
-                accidents, agressions, deuils, traumatismes de l’enfance, stress
-                post-traumatique… Une évaluation personnalisée lors de la
-                première séance permettra de déterminer l’approche la plus
-                adaptée.
-              </p>
-              <h3>Et si je ressens de la peur ou de la honte&nbsp;?</h3>
-              <p>
-                Ces émotions sont normales après un traumatisme. L’hypnose vous
-                aide à les accueillir, à les transformer et à retrouver
-                confiance en vous.
-              </p>
-              <h3>L’hypnose fonctionne-t-elle si je suis sceptique&nbsp;?</h3>
-              <p>
-                Il n’est pas nécessaire d’y croire totalement pour bénéficier
-                des effets de l’hypnose. L’essentiel est d’avoir l’envie
-                d’avancer et d’être ouvert à l’expérience.
-              </p>
-            </div>
+      <!-- CTA Section -->
+      <section class="section bg-gradient">
+        <div class="container text-center">
+          <h2 class="text-white mb-6">
+            Prêt(e) à vous libérer de votre passé ?
+          </h2>
+          <p class="text-white text-xl mb-8 max-w-2xl mx-auto">
+            Vous méritez de vivre pleinement, sans être entravé(e) par les
+            blessures du passé. Prenez rendez-vous pour commencer votre chemin
+            vers la guérison.
+          </p>
+          <div class="flex gap-4 justify-center">
+            <a href="tel:+33782835451" class="btn btn-primary btn-lg">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+              07 82 83 54 51
+            </a>
+            <a href="contact.html" class="btn btn-secondary">
+              Formulaire de contact
+            </a>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="main-footer">
-      <div class="container footer-flex">
-        <div class="footer-col">
-          <h3>Contact</h3>
-          <p>
-            Esther Allier<br />Cabinet d’hypnose à Strasbourg<br />Email :
-            <a href="mailto:contact@estherallier.fr">contact@estherallier.fr</a
-            ><br />Tél : <a href="tel:+33612345678">06 12 34 56 78</a>
-          </p>
-        </div>
-        <div class="footer-col">
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="aProposDeMoi.html">À propos</a></li>
-            <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h3>Adresse</h3>
-          <p>
-            Esther Allier – Hypnothérapeute<br />
-            10 Rue du Général de Castelnau<br />
-            Espace Castelnau<br />
-            67000 STRASBOURG
-          </p>
-          <h3>Suivez-moi</h3>
-          <div class="social-links">
-            <a href="#" aria-label="Instagram"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
-                alt="Instagram"
-            /></a>
-            <a href="#" aria-label="Facebook"
-              ><img
-                src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                alt="Facebook"
-            /></a>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>
+              <strong>Esther Allier</strong><br />
+              Hypnothérapeute certifiée
+            </p>
+            <p>
+              📧
+              <a href="mailto:contact@estherallier.fr"
+                >contact@estherallier.fr</a
+              >
+            </p>
+            <p>📞 <a href="tel:+33782835451">07 82 83 54 51</a></p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Navigation</h3>
+            <ul>
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="aProposDeMoi.html">À propos</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="Psychogenealogie.html">Psychogénéalogie</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Adresse</h3>
+            <p>
+              <strong>Cabinet d'hypnose</strong><br />
+              10 Rue du Général de Castelnau<br />
+              Espace Castelnau<br />
+              67000 STRASBOURG
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Horaires</h3>
+            <p>
+              <strong>Lundi - Vendredi</strong><br />
+              9h00 - 19h00
+            </p>
+            <p>
+              <strong>Samedi</strong><br />
+              9h00 - 17h00
+            </p>
           </div>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <p>
-          &copy; 2025 Esther Allier. Tous droits réservés. |
-          <a href="#">Mentions légales</a>
-        </p>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Esther Allier. Tous droits réservés. |
+            <a href="#">Mentions légales</a>
+          </p>
+        </div>
       </div>
     </footer>
 
     <script>
-      // Menu burger responsive
-      const hamburger = document.getElementById("hamburger");
-      const nav = document.getElementById("main-nav");
-      hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-        hamburger.classList.toggle("open");
+      // Menu mobile
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      mobileMenuBtn.addEventListener("click", () => {
+        mobileMenuBtn.classList.toggle("active");
+        mainNav.classList.toggle("mobile-open");
       });
+
+      // Header scroll effect
+      const header = document.getElementById("header");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      // FAQ Toggle
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          const faqItem = question.parentElement;
+          const answer = faqItem.querySelector(".faq-answer");
+          const icon = question.querySelector("svg");
+
+          faqItem.classList.toggle("active");
+
+          if (faqItem.classList.contains("active")) {
+            answer.style.display = "block";
+            icon.style.transform = "rotate(180deg)";
+          } else {
+            answer.style.display = "none";
+            icon.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+
+      // Animation on scroll
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+          }
+        });
+      }, observerOptions);
+
+      // Observe all animated elements
+      document
+        .querySelectorAll(
+          ".animate-fade-in-up, .animate-fade-in-left, .animate-fade-in-right"
+        )
+        .forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(30px)";
+          el.style.transition = "all 0.6s ease-out";
+          observer.observe(el);
+        });
     </script>
   </body>
 </html>

@@ -718,9 +718,11 @@ p {
 }
 
 .about-image img {
-  max-width: 100%;
+  max-width: 200px;
+  width: 200px;
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-lg);
+  margin: 0 auto;
 }
 
 /* FAQ section */
